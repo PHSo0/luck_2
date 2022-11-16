@@ -31,7 +31,7 @@ header{
     width: auto;
     height: 24px;
     top: 14px;
-    right: 17%;
+    right: 14%;
     color : #ffffff;
     font-family: 'Inter';
     font-style: normal;
@@ -40,10 +40,10 @@ header{
     line-height: 24px;
 }
 .box3{  
-    position: relative;
+    position: absolute;
     width: auto;
     height: 24px;
-    left : 85%;
+    right : 7%;
     top: 14px;
     color : #ffffff;
     font-family: 'Inter';
