@@ -15,7 +15,10 @@
         <span class = "box4">Q&A</span>
     </header>
     <p class = "login">LOGIN</p>
-    <input class = "id" type = "text" placeholder="ID">
-    
+    <form>
+    <input class = "id" type = "text" placeholder="  ID">
+    <input class = "pw" type = "password" placeholder="  PASSWORD">
+    <input class = "button" type = "submit" value="로그인">
+    </form>
 </body>
 </html>
