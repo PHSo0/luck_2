@@ -21,6 +21,7 @@ body{
     font-size: 28px;
     line-height: 34px;
     text-align: center;
+    font-weight: 400;
     color: #2E1E1E;
     position: absolute;
     top:95%;
@@ -33,6 +34,7 @@ body{
     font-size: 28px;
     line-height: 34px;
     text-align: center;
+    font-weight: 400;
     color: #2E1E1E;
     position: absolute;
     top:95%;
@@ -45,6 +47,7 @@ body{
     font-size: 28px;
     line-height: 34px;
     text-align: center;
+    font-weight: 400;
     color: #2E1E1E;
     position: absolute;
     top:95%;
@@ -56,6 +59,7 @@ body{
     font-size: 28px;
     line-height: 34px;
     text-align: center;
+    font-weight: 400;
     color: #2E1E1E;
     position: absolute;
     top:95%;
@@ -68,6 +72,7 @@ body{
     font-size: 28px;
     line-height: 34px;
     text-align: center;
+    font-weight: 400;
     color: #2E1E1E;
     position: absolute;
     top:95%;
@@ -80,6 +85,7 @@ body{
     font-size: 28px;
     line-height: 34px;
     text-align: center;
+    font-weight: 400;
     color: #2E1E1E;
     position: absolute;
     top:95%;

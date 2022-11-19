@@ -12,6 +12,6 @@
     include("no_login_header.php");
     ?>
 
-    <p>회원가입이 완료되었습니다!
+    <p>회원가입이 완료되었습니다!</p>
 </body>
 </html>
