@@ -11,9 +11,6 @@
     margin : 0px;
     border : none;
 }
-body{
-    background-color: #fffdf5;
-}
 header{
     position : fixed;
     background-color: #393939;
@@ -66,8 +63,8 @@ header{
 <body>
     <!--로그인에 성공했을 경우의 헤더파일 (백그라운드 색 포함)-->
     <header>
-        <span class = "box1">오늘의 운세</span>
-        <span class = "box2">로그아웃</span>
+        <span class = "box1" onclick = "window.location.href='http://localhost/Wp_project/main.php'">오늘의 운세</span>
+        <span class = "box2" onclick = "window.location.href='http://localhost/Wp_project/login/process.php?mode=logout'">로그아웃</span>
         <span class = "box3">Q&A</span>
     </header>
 </body>

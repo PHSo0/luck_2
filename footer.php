@@ -10,14 +10,7 @@
     padding : 0px;
     margin : 0px;
     border : none;
-}
-body{
-    background-color: #fffdf5;
-}
-#wrapper{
-    height : auto;
-    min-height : 100%;
-    padding-bottom: 70px;
+    height : 100%;
 }
 footer{
     background-color: #442c2c;
@@ -51,9 +44,6 @@ footer{
 </style>
 </head>
 <body>
-    <div id = "wrapper">
-
-    </div>
     <footer>
         <div class = "content">
         <div class = "first">

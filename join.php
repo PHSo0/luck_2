@@ -5,34 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="join.css">
+<style>
+body{
+    padding : 0%;
+    margin : 0%;
+    border : none;
+    background : #FFFDF5;
+}
+.login{
+    color : #000000;
+    width: 100%;
+    height : 100px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+    position: fixed;
+    top : 228px;
+    
+}
+.id{
+    width :30%;
+    height : 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    background-color: #fffdf5;    
+    position : fixed;
+    top : 358px;
+    border : 0px;
+    border-bottom: 2px solid #000000;
+    left : 35%;   
+}
+.pw{
+    width :30%;
+    height : 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    background-color: #fffdf5;    
+    position : fixed;
+    top : 428px;
+    border : 0px;
+    border-bottom: 2px solid #000000;
+    left : 35%; 
+}
+.button{
+    background-color: #000000;
+    color : white;
+    width : 20%;
+    height : 50px;
+    position : fixed;
+    bottom : 285px;
+    left: 40%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+</style>
 </head>
 <body>
-    <form>
+    <!--로그인 화면 구현 완성-->
     <?php
-    include("no_login_header.php");
+    include("../header/no_login_header.php");
     ?>
-    <label class="title">회원가입</label> 
-    <label class="joinid">아이디<input type="text" size="60" id="id"></label>
-    <label class="joinpw">비밀번호<input type="password" size="60" id="pw"></label>
-    <label class="pwcheck">비밀번호 확인<input type="password" size="60" id="pwch"></label>
-    <label class="name">이름<input type="text" size="60" id="na"></label>
-    <label class="sex">성별</label><label class="birth">생년월일</label>
-
-    <div id="a">
-    <label class="a1"><input type="radio" name="aaa">  여성</label>
-    <label class="a1"><input type="radio" name="aaa">  남성</label>
-    </div>
-
-    <div id="b">
-    <label class="b1"><input type="date"></label>
-    </div>
-
-    <div id="c">
-    <input type="checkbox"><lable class="c1">  이용약관 및 개인정보수집 및 이용, 정보 수신에 동의합니다.</label>
-    </div>
-
-    <button class="button"><label class="d1">회원가입</label></button>
+    <p class = "login">LOGIN</p>
+    <form action = "process.php?mode=login" method = "post">
+    <input class = "id" name = "id" type = "text" placeholder="  ID">
+    <input class = "pw" name = "pw" type = "password" placeholder="  PASSWORD">
+    <input class = "button" type = "submit" value="로그인">
     </form>
+    
 </body>
 </html>
