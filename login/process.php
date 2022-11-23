@@ -31,7 +31,7 @@
 
             $sql -> execute();
         
-        header('location:joincomplete.php');
+        header('location:../main/main.php');
         break;
 
         case 'login':
@@ -56,12 +56,13 @@
             $_SESSION['id'] = $row['id'];
             $_SESSION['name'] = $row['name'];
 
-        header('location:../main.php');
+        header('location:../main/main.php');
         break;
 
         case 'logout':
             session_unset();
-        header('location:../main.php');
+            
+        header('location:../main/main.php');
         break;
     }
 ?>
