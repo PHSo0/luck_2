@@ -26,6 +26,8 @@ div{
     color: #2E1E1E;
     display: inline-block;
     margin: 16px 131px 16px 33px; /*위 오 아 왼 */ 
+    border-bottom : 5px solid #000000;
+    padding-bottom: 12px;
 }
 
 .nav_b{

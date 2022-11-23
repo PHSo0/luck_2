@@ -38,7 +38,6 @@ div{
     color: #2E1E1E;
     display: inline-block;
     margin: 16px 131px 16px 33px;
-    
 }
 
 .nav_c{
@@ -51,6 +50,8 @@ div{
     color: #2E1E1E;
     display: inline-block;
     margin: 16px 131px 16px 33px;
+    border-bottom : 5px solid #000000;
+    padding-bottom: 12px;
 }
 .nav_d{
     font-family: 'Inter';
@@ -72,8 +73,6 @@ div{
     text-align: center;
     font-weight: 400;
     color: #2E1E1E;
-    display: inline-block;
-    margin: 16px 131px 16px 33px;
 }
 
 .nav_f{
@@ -85,7 +84,8 @@ div{
     font-weight: 400;
     color: #2E1E1E;
     display: inline-block;
-   
+    display: inline-block;
+    margin: 16px 131px 16px 33px;
 }
 </style>
 
