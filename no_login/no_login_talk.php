@@ -6,13 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    #content{
-        background-color: #FFFDF5  ;
-        width : 100%;
-        height : 70px;
-        position : absolute;
-        top : 53px;
-    }
+
     *{
     padding : 0px;
     margin : 0px;
@@ -26,6 +20,18 @@
         height : 863px;
         background: linear-gradient(180deg, #FFEDDD 0%, rgba(255, 255, 255, 0) 3.51%);
     }
+    .content{
+        text-align: center;
+        font-family: 'inter';
+        font-size:32px;
+        font-weight: 700;
+        color: #AB6700;
+        line-height: 39px;
+        position: relative;
+        top : 350px;
+    }
+
+
 
     </style>
 </head>
@@ -33,13 +39,10 @@
     <?php if(!isset($_SESSION['id'])){
         include("../header/no_login_header.php");
     }
-
+    include("../main_nav/talk.php");
     ?>
-
-    <div id = "content">
-
-    </div>
     <div id = "no_login">
+        <p class= "content">로그인이 필요한 서비스입니다.</p>
     </div>
     
     

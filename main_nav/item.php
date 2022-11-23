@@ -50,8 +50,6 @@ div{
     color: #2E1E1E;
     display: inline-block;
     margin: 16px 131px 16px 33px;
-    border-bottom : 5px solid #000000;
-    padding-bottom: 12px;
 }
 .nav_d{
     font-family: 'Inter';
@@ -73,6 +71,8 @@ div{
     text-align: center;
     font-weight: 400;
     color: #2E1E1E;
+    display: inline-block;
+    margin: 16px 131px 16px 33px;
 }
 
 .nav_f{
@@ -84,19 +84,20 @@ div{
     font-weight: 400;
     color: #2E1E1E;
     display: inline-block;
-    display: inline-block;
-    margin: 16px 131px 16px 33px;
+    border-bottom : 5px solid #000000;
+    padding-bottom: 12px;
+   
 }
 </style>
 
 <body>
     <div>
-        <p class = "nav_a">오늘의 운세</p>
-        <p class = "nav_b">띠운세</p>
-        <p class = "nav_c">별자리운세</p>
-        <p class = "nav_d">듣고 싶은 말</p>
-        <p class = "nav_e">포춘쿠키</p>
-        <p class = "nav_f">행운의 아이템</p>
+        <p class = "nav_a" onclick="location.href='../main/main_today.php'">오늘의 운세</p>
+        <p class = "nav_b" onclick="location.href='../main/main_ddi.php'">띠운세</p>
+        <p class = "nav_c" onclick="location.href='../main/main_star.php'">별자리운세</p>
+        <p class = "nav_d" onclick="location.href='../main/main_talk.php'">듣고 싶은 말</p>
+        <p class = "nav_e" onclick="location.href='../main/main_cookie.php'">포춘쿠키</p>
+        <p class = "nav_f" onclick="location.href='../main/main_item.php'">행운의 아이템</p>
 </div>
 </body>
 </html>

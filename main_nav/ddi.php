@@ -92,12 +92,12 @@ div{
 
 <body>
     <div>
-        <p class = "nav_a">오늘의 운세</p>
-        <p class = "nav_b">띠운세</p>
-        <p class = "nav_c">별자리운세</p>
-        <p class = "nav_d">듣고 싶은 말</p>
-        <p class = "nav_e">포춘쿠키</p>
-        <p class = "nav_f">행운의 아이템</p>
+        <p class = "nav_a" onclick="location.href='../main/main_today.php'">오늘의 운세</p>
+        <p class = "nav_b" onclick="location.href='../main/main_ddi.php'">띠운세</p>
+        <p class = "nav_c" onclick="location.href='../main/main_star.php'">별자리운세</p>
+        <p class = "nav_d" onclick="location.href='../main/main_talk.php'">듣고 싶은 말</p>
+        <p class = "nav_e" onclick="location.href='../main/main_cookie.php'">포춘쿠키</p>
+        <p class = "nav_f" onclick="location.href='../main/main_item.php'">행운의 아이템</p>
 </div>
 </body>
 </html>

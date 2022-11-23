@@ -11,7 +11,7 @@
         text-align: center;
         font-family: 'inter';
         font-size:32px;
-        font-weight: 700px;
+        font-weight: 700;
         color: #AB6700;
         width: 700px;
         line-height: 39px;
