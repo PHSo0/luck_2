@@ -1,0 +1,33 @@
+#a{
+    width: 1300px;
+    height: 600px;
+    background: #BDBAB3;
+    border-radius: 20px;
+    position: absolute;
+    top: 210%;
+    left: 11.2%;
+}
+
+#b{
+    width:1230px;
+    height: 530px;
+    background: #DEDAD3;
+    border-radius: 20px;
+    position: absolute;
+    top:260%;
+    left: 13.2%;
+}
+
+.ch{
+    font-family: 'Inter';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 133px;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-text-stroke: 6px #AB6700;
+    position: absolute;
+    top:1118%;
+    left: 22%;    
+}
