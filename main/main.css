@@ -5,3 +5,19 @@
     position : absolute;
     top : 123px;
 }
+
+.main_a{
+    margin:30px 15px 10px 45px; /*위 오 아 왼 */
+}
+
+.main_b{
+    margin:30px 15px 10px 2px;
+}
+
+.main_c{
+    margin: 10px 15px 20px 45px;
+}
+
+.main_d{
+    margin: 10px 0px 20px 0px;
+}

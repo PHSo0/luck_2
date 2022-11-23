@@ -14,11 +14,11 @@
     include("../nav.php");
     ?>
     <div id = "content">
-    <img class="main_a" src="pic/노랑.png">
-    <img src="pic/초록.png">
-    <img src="pic/파랑.png">
-    <img src="pic/분홍.png">
+    <img class="main_a" src="pic/찐노랑.png" width="1200" height="450">
+    <img class="main_b" src="pic/찐초록.png" height="450">
+    <img class="main_c" src="pic/찐파랑.png" width="1000" height="280">
+    <img class="main_d" src="pic/찐분홍.png" height="280">
     </div>
-    
+     
 </body>
 </html>
