@@ -14,7 +14,7 @@
 nav{
     background-color: #CFCCC9;
     position: absolute;
-    width: 294px;
+    width: 294%;
     height: 863px;
     left: 0px;
     top: 53px;

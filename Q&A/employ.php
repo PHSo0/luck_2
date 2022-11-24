@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #QA_content{
+            height: 863px;
+            width: 83%;
+            background-color: #FFFDF5;
+            position: absolute;
+            top: 53px;
+            left: 294px;
+        }
+            <!--text-align : center;-->
+        
+    </style>
 </head>
 <body>
     <?php
@@ -19,5 +31,9 @@
     <?php
     include("../nav/nav(employ).php");
     ?>
+    <div id = "QA_content">
+    <p>afadsfdasf</p>
+
+    </div>
 </body>
 </html>
