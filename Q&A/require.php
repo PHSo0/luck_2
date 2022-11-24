@@ -15,9 +15,8 @@
             top: 53px;
             left: 294px;
         }
-        p{
-            text-align : center;
-        }
+            <!--text-align : center;-->
+        
     </style>
 </head>
 <body>
