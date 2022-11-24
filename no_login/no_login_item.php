@@ -36,13 +36,6 @@
     </style>
 </head>
 <body>
-    <?php 
-    session_start();
-    if(!isset($_SESSION['id'])){
-        include("../header/no_login_header.php");
-    }
-    include("../main_nav/item.php");
-    ?>
     <div id = "no_login">
         <p class= "content">로그인이 필요한 서비스입니다.</p>
     </div>

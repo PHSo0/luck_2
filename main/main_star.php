@@ -25,9 +25,14 @@
         include("../header/yes_login_header.php");
     }
     include("../main_nav/star.php");
+    if(! isset($_SESSION['id'])){
+        include("../no_login/no_login_ddi.php");
+    } else{
+        // 띠운세 컨텐츠 부분
+    }
     ?>
-    <div class="content">
+    <!-- <div class="content">
     <p>별자리 운세 페이지입니다.</p>
-    </div>
+    </div> -->
 </body>
 </html>

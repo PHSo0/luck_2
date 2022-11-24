@@ -25,7 +25,9 @@
     } else{
         include("../header/yes_login_header.php");
     }
-    include("../main_nav/cookie.php"); ?>
+    include("../main_nav/cookie.php");
+     
+    ?>
     <div class="content">
     <p>포춘쿠키 페이지 입니다.</p>
     </div>
