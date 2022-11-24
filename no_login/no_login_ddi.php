@@ -36,7 +36,8 @@
     </style>
 </head>
 <body>
-    <?php if(!isset($_SESSION['id'])){
+    <?php 
+    if(!isset($_SESSION['id'])){
         include("../header/no_login_header.php");
     }
     include("../main_nav/ddi.php");

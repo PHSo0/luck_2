@@ -18,15 +18,23 @@
     </style>
 <body>
     <?php
+    session_start();
     if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
     } else{
         include("../header/yes_login_header.php");
     }
     include("../main_nav/talk.php");
+
+    if(! isset($_SESSION['id'])){
+        include("../no_login/no_login_talk.php");
+    } else{
+        echo " <div class='content'>
+        <p>듣고싶은말페이지 입니다.</p>
+        </div>";
+    }
+    
     ?>
-    <div class="content">
-    <p>듣고싶은말페이지 입니다.</p>
-    </div>
+    
 </body>
 </html>
