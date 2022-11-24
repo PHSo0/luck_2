@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,7 +64,7 @@ header{
 <body>
     <!--로그인에 성공했을 경우의 헤더파일 (백그라운드 색 포함)-->
     <header>
-        <span class = "header_box1" onclick = "location.href='../main.php'">오늘의 운세</span>
+        <span class = "header_box1" onclick = "location.href='../main/main.php'">오늘의 운세</span>
         <span class = "header_box2" onclick = "location.href='../login/process.php?mode=logout'">로그아웃</span>
         <span class = "header_box3" onclick = "location.href = '../Q&A/require.php'">Q&A</span>
     </header>

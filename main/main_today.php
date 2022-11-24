@@ -18,7 +18,11 @@
 </head>
 <body>
     <?php
-    include("../header/no_login_header.php");
+    if(!isset($_SESSION['id'])){
+        include("../header/no_login_header.php");
+    } else {
+        include("../header/yes_login_header.php");
+    }
     include("../main_nav/today.php");
     ?>
     <div class="content">

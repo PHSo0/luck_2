@@ -60,9 +60,9 @@
         break;
 
         case 'logout':
-            session_unset();
-            
-        header('location:../main/main.php');
+            session_destroy();
+
+            header('location:../main/main.php');
         break;
     }
 ?>

@@ -10,8 +10,12 @@
 </head>
 <body>
 <?php
-    include("../header/no_login_header.php");
-    include("../nav.php");
+    if(! isset($_SESSION['id'])){
+        include("../header/no_login_header.php");
+    } else {
+        include("../header/yes_login_header.php");
+    }
+    include("../main_nav/today.php");
     ?>
     <div id = "content">
     <img class="main_a" src="pic/찐노랑.png" width="1200" height="450">

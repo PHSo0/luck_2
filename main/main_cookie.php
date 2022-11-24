@@ -19,14 +19,11 @@
 
 <body>
     <?php
-    /*if(!isset($_SESSION['id'])){
-        include("../no_login/no_login_cookie.php");
-    } else{
+    if(!isset($_SESSION['id'])){
+        include("../header/no_login_header.php");
+    } else {
         include("../header/yes_login_header.php");
-        include("../main_nav/cookie.php");*/
-    ?>
-    <?php
-    include("../header/no_login_header.php");
+    }
     include("../main_nav/cookie.php");
     ?>
     <div class="content">

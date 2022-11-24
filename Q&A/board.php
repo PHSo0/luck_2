@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <?php if(!isset($_SESSION['id'])){
+    <?php 
+    if(!isset($_SESSION['id'])){
         include("../header/no_login_header.php");
-    } else {
-        include("../header/yes_login_header.php");
-    }?>
+    } include("../header/yes_login_header.php");
+    ?>
 
     
 
