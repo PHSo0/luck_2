@@ -36,11 +36,6 @@
     </style>
 </head>
 <body>
-    <?php if(!isset($_SESSION['id'])){
-        include("../header/no_login_header.php");
-    }
-    include("../main_nav/today.php");
-    ?>
     <div id = "no_login">
         <p class= "content">로그인이 필요한 서비스입니다.</p>
     </div>

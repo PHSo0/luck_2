@@ -18,15 +18,21 @@
     </style>
 <body>
     <?php
-    if(!isset($_SESSION['id'])){
+    session_start();
+    if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
-    } else {
+    } else{
         include("../header/yes_login_header.php");
     }
     include("../main_nav/item.php");
+    if(! isset($_SESSION['id'])){
+        include("../no_login/no_login_ddi.php");
+    } else{
+        // 행운의 아이템 컨텐츠 부분
+    }
     ?>
-    <div class="content">
+    <!-- <div class="content">
     <p>행운의 아이템 페이지 입니다.</p>
-    </div>
+    </div> -->
 </body>
 </html>

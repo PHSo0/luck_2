@@ -15,6 +15,7 @@
             top: 53px;
             left: 294px;
         }
+<<<<<<< HEAD
         p{
             position: absolute;
             text-align : center;
@@ -27,6 +28,10 @@
             line-height: 39px;
             color: #000000;
         }
+=======
+           /*text-align : center;-->*/
+        
+>>>>>>> ca1fadeb3da191505b943cd2c6b7a53a58603b62
     </style>
 </head>
 <body>

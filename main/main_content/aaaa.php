@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+    <title>오늘은 어떤 말이 듣고 싶나요?</title>
+    <style>
         .content_h{
             background-color: #fffdf5;
             width :100%;
@@ -52,22 +51,15 @@
             opacity: 0.5;
         }
     </style>
+</head>
 <body>
-    <?php
-    session_start();
-    if(! isset($_SESSION['id'])){
-        include("../header/no_login_header.php");
-    } else{
-        include("../header/yes_login_header.php");
-    }
-    include("../main_nav/talk.php");
-    if(! isset($_SESSION['id'])){
-        include("../no_login/no_login_ddi.php");
-    } else{
-       ?>
+<?php
+        include("../../header/yes_login_header.php");
+        include("../../main_nav/talk.php");
+    ?>
     <div class="content_h">
     
-    <img class="img_s" src="../icon/talk/찐완성.png" width="1440px" height="800px">
+    <img class="img_s" src="../../icon/talk/찐완성.png" width="1440px" height="800px">
     <div class="talk_1"></div>
     
     <!-- <div class="talk_1"></div> -->
@@ -75,12 +67,6 @@
     <div class="talk_3"></div>
     <div class="talk_4"></div>
     </div>
-    <?php
-    }
-    ?>
-    
-    
-
     
 </body>
-</html> 
+</html>

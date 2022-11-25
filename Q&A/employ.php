@@ -15,7 +15,18 @@
             top: 53px;
             left: 294px;
         }
-            <!--text-align : center;-->
+        .employ{
+            font-family: 'Inter';
+            font-style: normal;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 39px;
+            color: #000000;
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            margin-left : 37%;
+        }
         
     </style>
 </head>
@@ -32,7 +43,8 @@
     include("../nav/nav(employ).php");
     ?>
     <div id = "QA_content">
-    <p>afadsfdasf</p>
+    <p class = "employ"> 이메일을 적어주세요</p>
+    
 
     </div>
 </body>
