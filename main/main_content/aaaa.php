@@ -21,45 +21,52 @@
         .talk_1{
             width:331px;
             height:445px;
-            background-color:green;
             margin-left:157px;
-            margin-top:140px;
+            margin-top:20px;
+            background:green; 
+            opacity: 0.5;
         }
         .talk_2{
             width:331px;
             height:445px;
-            background-color:pink;
             margin-left:513px;
-            margin-top:140px;
+            margin-top:20px;
+            background:yellow;
+            opacity: 0.5;
         }
         .talk_3{
             width:331px;
             height:445px;
-            background-color:blue;
             margin-left:865px;
-            margin-top:140px;
+            margin-top:20px;
+            background:red;
+            opacity: 0.5;
         }
         .talk_4{
             width:331px;
             height:445px;
-            background-color:yellow;
             margin-left:1218px;
-            margin-top:140px;
+            margin-top:20px;
+            background:blue;
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
 <?php
-   
         include("../../header/yes_login_header.php");
         include("../../main_nav/talk.php");
     ?>
     <div class="content_h">
+    
     <img class="img_s" src="../../icon/talk/찐완성.png" width="1440px" height="800px">
-    </div>
     <div class="talk_1"></div>
+    
+    <!-- <div class="talk_1"></div> -->
     <div class="talk_2"></div>
     <div class="talk_3"></div>
     <div class="talk_4"></div>
+    </div>
+    
 </body>
 </html>
