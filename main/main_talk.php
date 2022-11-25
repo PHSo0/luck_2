@@ -28,11 +28,17 @@
 
     if(! isset($_SESSION['id'])){
         include("../no_login/no_login_talk.php");
-    } else{
+    } else
+<<<<<<< HEAD
         
+=======
+        //듣고 싶은 말 페이지
+>>>>>>> 9b1616720de308b3f195a6c86106f288c3eee824
     }
-    
     ?>
+    <!-- <div class="content">
+    <p>듣고 싶은 말 페이지입니다.</p>
+    </div> -->
     
 </body>
 </html>

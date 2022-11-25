@@ -26,12 +26,13 @@
     }
     include("../main_nav/ddi.php");
     if(! isset($_SESSION['id'])){
-        include("../no_login/no_login_ddi.php")
+        include("../no_login/no_login_ddi.php");
+    } else{
+        // 띠운세 컨텐츠 부분
     }
-    
     ?>
-    <div class="content">
+    <!-- <div class="content">
     <p>띠운세 페이지 입니다.</p>
-    </div>
+    </div> -->
 </body>
 </html>
