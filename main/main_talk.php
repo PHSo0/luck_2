@@ -29,9 +29,7 @@
     if(! isset($_SESSION['id'])){
         include("../no_login/no_login_talk.php");
     } else{
-        echo " <div class='content'>
-        <p>듣고싶은말페이지 입니다.</p>
-        </div>";
+        
     }
     
     ?>

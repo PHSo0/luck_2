@@ -9,12 +9,22 @@
 </head>
 <body>
 <?php
-    include("no_login_header.php");
+    include("header/no_login_header.php");
     include("nav.php");
     ?>
+<div id="cookie_content">
+    <div id="k_a"> </div>
+    <div id="k_b">
 
-    <div id="a"></div>
-    <div id="b"></div>
-    <p class="ch">쿠키를 골라주세요</p>
+    <img class="icon_1" src="icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_2" src="icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_3" src="icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_4" src="icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_5" src="icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_6" src="icon/포춘쿠키/2.png" width="240" height="240">
+    </div>  
+    <p class="ch"><b>쿠키를 골라주세요</b></p>
+    
+    </div>
 </body>
 </html>
