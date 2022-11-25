@@ -16,7 +16,16 @@
             left: 294px;
         }
         p{
+            position: absolute;
             text-align : center;
+            top: 500px;
+            left: 380px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #000000;
         }
     </style>
 </head>
@@ -33,7 +42,7 @@
     include("../nav/nav(require).php");
     ?>
     <div id = "QA_content">
-    <p>afadsfdasf</p>
+    <p>문의가 정상적으로 처리되었습니다</p>
 
     </div>
 </body>
