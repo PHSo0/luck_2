@@ -15,7 +15,7 @@
             top: 53px;
             left: 294px;
         }
-            <!--text-align : center;-->
+           /*text-align : center;-->*/
         
     </style>
 </head>

@@ -21,24 +21,14 @@
     session_start();
     if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
+        include("../main_nav/talk.php");
+        include("../no_login/no_login_talk.php");
     } else{
         include("../header/yes_login_header.php");
-    }
-    include("../main_nav/talk.php");
-
-    if(! isset($_SESSION['id'])){
-        include("../no_login/no_login_talk.php");
-    } else
-<<<<<<< HEAD
-        
-=======
-        //듣고 싶은 말 페이지
->>>>>>> 9b1616720de308b3f195a6c86106f288c3eee824
+        include("../main_nav/talk.php");
+        include("main_content/main_talk_content.php");
     }
     ?>
-    <!-- <div class="content">
-    <p>듣고 싶은 말 페이지입니다.</p>
-    </div> -->
     
 </body>
 </html>
