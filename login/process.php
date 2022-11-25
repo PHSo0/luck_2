@@ -31,7 +31,7 @@
 
             $sql -> execute();
         
-        header('location:../main/main.php');
+        header('location:../login/joincomplete.php');
         break;
 
         case 'login':

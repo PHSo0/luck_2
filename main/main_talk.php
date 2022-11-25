@@ -21,12 +21,14 @@
     session_start();
     if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
+        include("../main_nav/talk.php");
+        include("../no_login/no_login_talk.php");
     } else{
         include("../header/yes_login_header.php");
+        include("../main_nav/talk.php");
+        include("main_content/main_talk_content.php");
     }
-        include("../main_content/aaaa.php");
     ?>
-    
     
 </body>
 </html>

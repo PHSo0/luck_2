@@ -6,13 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .content{
+        .cookie_content{
             background-color: #fffdf5;
             width :100%;
-            height: 793px;
-            position : absolute;
-            top : 123px;
+            height: auto;
+            position: absolute;
+            top : 100px;
+        }
+        #k_a{
+            position: relative;
+            width: 1200px;
+            height: 630px;
+            background: #BDBAB3;
+            border-radius: 20px;
+            margin:0 auto; 
+        }
 
+        #k_b{
+            position: relative;
+            width: 1100px;
+            height: 530px;
+            background: #DEDAD3;
+            border-radius: 20px;
+            margin-left : 40px; 
+        }
+        .ch{
+            font-family: 'Inter';
+            font-style: normal; 
+            font-size: 110px;
+            line-height: 133px;
+            color: #ffffff;
+            -webkit-text-stroke: 5px #AB6700;
+            position: relative;
+            text-align: center;
+            top : 45px;
+        }
+
+        .icon_1{
+            /* width:30%;
+            height:300px;
+            position: absolute;
+            top:10.5%;
+            left: 13.2%; */
+            /*위 오 아 왼 */
+            margin : 0px 50px 50px 60px;
         }
     </style>
 </head>
@@ -26,10 +63,19 @@
         include("../header/yes_login_header.php");
     }
     include("../main_nav/cookie.php");
-     
     ?>
-    <div class="content">
-    <p>포춘쿠키 페이지 입니다.</p>
+    <div class="cookie_content">
+    <div id="k_a"> 
+    <div id="k_b">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240"> <br>
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
+    </div>  </div>
+    <p class="ch"><b>쿠키를 골라주세요</b></p>
+    
     </div>
     
     
