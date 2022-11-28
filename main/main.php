@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main</title>
     <link rel="stylesheet" href="main.css">
-
 </head>
-<body>
+<body> 
 <?php
     session_start();
     // if(! isset($_SESSION['id'])){
