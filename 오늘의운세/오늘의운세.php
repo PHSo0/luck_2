@@ -207,9 +207,9 @@
     <body>
     <?php
     if(! isset($_SESSION['id'])){
-        include("../header/no_login_header.php");
-    } else{
         include("../header/yes_login_header.php");
+    } else{
+        include("../header/no_login_header.php");
     }   
         include("../main_nav/today.php");
     ?>
