@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <?php
+<?php
     session_start();
     if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
@@ -26,13 +26,13 @@
     }
     include("../main_nav/today.php");
     if(! isset($_SESSION['id'])){
-        include("../no_login/no_login_talk.php");
+        include("../no_login/no_login_today.php");
     } else{
-        //오늘의 운세 페이지
+        // 띠운세 컨텐츠 부분
     }
     ?>
     <!-- <div class="content">
-    <p>오늘의 운세 페이지 입니다.</p>
+    <p>띠운세 페이지 입니다.</p>
     </div> -->
 </body>
 </html>
