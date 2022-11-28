@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-*{
-    padding : 0px;
-    margin : 0px;
-    border : none;
-    height : 100%;
-}
+
 footer{
     background-color: #442c2c;
     width :100%;

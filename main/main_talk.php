@@ -61,10 +61,7 @@
         include("../header/yes_login_header.php");
     }
     include("../main_nav/talk.php");
-    if(! isset($_SESSION['id'])){
-        include("../no_login/no_login_ddi.php");
-    } else{
-       ?>
+    ?>
     <div class="content_h">
     
     <img class="img_s" src="../icon/talk/찐완성.png" width="1440px" height="800px">
@@ -75,9 +72,6 @@
     <div class="talk_3"></div>
     <div class="talk_4"></div>
     </div>
-    <?php
-    }
-    ?>
     
     
 
