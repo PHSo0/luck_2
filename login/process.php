@@ -60,7 +60,8 @@
         break;
 
         case 'logout': 
-            unset($_SESSION['id']);
+            session_destroy();
+            /*unset($_SESSION['id']);*/
             header('location:../main/main.php');
             
             

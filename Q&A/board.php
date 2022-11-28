@@ -16,39 +16,74 @@
             left: 294px;
         }
         .board_1{
-            text-align: center;
-            height : 50px;
-            border-top : 2px solid black;
+            margin : 160px 320px 0px 320px;
+            height : 84px;  
+            text-align: left;
+            border-top : 1px solid black;
+            position: relative;
+            top : 100px;
+            display :block;
+        }
+        .board_2{
+            margin : 0px 320px 0px 320px;
+            height : 84px;  
+            border-top : 1px solid black;
+            position: relative;
+            top : 100px;
+            display :block;
+        }
+        .board_3{
+            margin : 0px 320px 0px 320px;
+            height: 84px;  
+            border-top : 1px solid black;
             border-bottom : 1px solid black;
             position: relative;
             top : 100px;
-            display: block;
+            display : block;
         }
+        .post{
+            margin :30px;
+        }
+
+        .sub_button{
+            position :absolute;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            margin : 690px 0px 0px 1350px;
+            background-color: #FFFDF5;
+        }
+        
         
     </style>
 </head>
 <body>
     <?php 
-    if(!isset($_SESSION['id'])){
+    session_start();
+    if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
-    } include("../header/yes_login_header.php");
+    } else{
+        include("../header/yes_login_header.php");
+    }
     ?>
     <?php
     include("../nav/nav(board).php");
     ?>
+    <?php $num =1; ?>
 
     <div id = "QA_content">
-    <div class = "board_1">게시글1
+    <div class = "board_1"><p class="post">게시글1</p>
     </div>
-    <div class = "board_1">게시글2
+    <div class = "board_2"><p class="post">게시글1</p>
     </div>
-    <div class = "board_1">게시글2
+    <div class = "board_2"><p class="post">게시글1</p>
     </div>
-    <div class = "board_1">게시글2
+    <div class = "board_3"><p class="post">게시글1</p>
     </div>
-    <div class = "board_1">게시글2
     </div>
 
-    </div>
+    <input type = submit value="글쓰기" class = "sub_button">
 </body>
 </html>

@@ -11,7 +11,7 @@
     border:none;
 
 }
-nav{
+.QA_nav{
     background-color: #CFCCC9;
     position: absolute;
     width: 294px;
@@ -25,7 +25,7 @@ nav{
     width: 171px;
     height: 50.77px;
     left: 22px;
-    top: 148.2px;
+    top: 100px;
     
     font-family: 'Inter';
     font-style: normal;
@@ -42,7 +42,7 @@ position: absolute;
 width: 175px;
 height: 27.5px;
 left: 22px;
-top: 215.89px;
+top: 167px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -56,7 +56,7 @@ line-height: 22px;
 width: 169px;
 height: 35.96px;
 left: 22px;
-top: 260.32px;
+top: 212px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -72,7 +72,7 @@ align-items: center;
 width: 145px;
 height: 35.96px;
 left: 22px;
-top: 313.2px;
+top: 265px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -87,7 +87,7 @@ align-items: center;
 </style>
 </head>
 <body>
-<nav>
+<nav class = "QA_nav">
     
        <span class = "nav_box1">Q&A</span>
        <span class = "nav_box2" onclick="location.href ='../Q&A/require.php'">요구사항 및 개선사항</span>
