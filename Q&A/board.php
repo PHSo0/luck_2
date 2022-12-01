@@ -185,7 +185,7 @@ break;
     <div class="num_div"><p class="p_post"> 
     <?php
     echo"< ";
-    for($i=1; $i<=$page; $i++){
+    for($i=2; $i<=$page; $i++){
         echo "<form action = '../login/process.php?page=$i' method = 'post'>";
         echo"<a href='list.php?page=$i'>$i </a>";
     }
