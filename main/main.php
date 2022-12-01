@@ -10,11 +10,7 @@
 <body> 
 <?php
     session_start();
-    // if(! isset($_SESSION['id'])){
-    //     include("../header/no_login_header.php");
-    // } else {
-    //     include("../header/yes_login_header.php");
-    // } 
+
     if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
     } else{
@@ -22,7 +18,7 @@
     }
     include("../main_nav/none.php");
     ?>
-    <div id = "content">
+    <div id = "mmcontent">
     <img class="main_a" src="pic/찐노랑.png" width="1200" height="450">
     <img class="main_b" src="pic/찐초록.png" height="450">
     <img class="main_c" src="pic/찐파랑.png" width="1000" height="280">

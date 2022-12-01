@@ -20,7 +20,7 @@
         height : 863px;
         background: linear-gradient(180deg, #FFEDDD 0%, rgba(255, 255, 255, 0) 3.51%);
     }
-    .content{
+    .acontent{
         text-align: center;
         font-family: 'inter';
         font-size:32px;
@@ -37,7 +37,7 @@
 </head>
 <body>
     <div id = "no_login">
-        <p class= "content">로그인이 필요한 서비스입니다.</p>
+        <p class= "acontent">로그인이 필요한 서비스입니다.</p>
     </div>
     
     
