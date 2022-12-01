@@ -28,7 +28,7 @@
     if(! isset($_SESSION['id'])){
         include("../no_login/no_login_today.php");
     } else{
-        // 띠운세 컨텐츠 부분
+        include("content/today.php");
     }
     ?>
     <!-- <div class="content">

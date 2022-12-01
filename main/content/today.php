@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
     <style>
-    body {background-color: #FFFDF5;}
+    /* body {background-color: #FFFDF5;} */
     .todaybox {
     box-sizing: border-box;
     position: absolute;
@@ -205,14 +205,6 @@
     
     </style>
     <body>
-    <?php
-    if(! isset($_SESSION['id'])){
-        include("../header/yes_login_header.php");
-    } else{
-        include("../header/no_login_header.php");
-    }   
-        include("../main_nav/today.php");
-    ?>
     
 <main>
     <div class="todaybox"><p class="ch1">
