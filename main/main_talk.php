@@ -25,7 +25,7 @@
             margin-left:157px;
             margin-top:20px;
             background:green; 
-            opacity: 0.5;
+            opacity: 0;
         }
         .talk_2{
             width:331px;
@@ -33,7 +33,7 @@
             margin-left:513px;
             margin-top:20px;
             background:yellow;
-            opacity: 0.5;
+            opacity: 0;
         }
         .talk_3{
             width:331px;
@@ -41,7 +41,7 @@
             margin-left:865px;
             margin-top:20px;
             background:red;
-            opacity: 0.5;
+            opacity: 0;
         }
         .talk_4{
             width:331px;
@@ -49,7 +49,7 @@
             margin-left:1218px;
             margin-top:20px;
             background:blue;
-            opacity: 0.5;
+            opacity: 0;
         }
     </style>
 <body>
@@ -65,12 +65,13 @@
     <div class="content_h">
     
     <img class="img_s" src="../icon/talk/찐완성.png" width="1440px" height="800px">
-    <div class="talk_1"></div>
-    
-    <!-- <div class="talk_1"></div> -->
-    <div class="talk_2"></div>
-    <div class="talk_3"></div>
-    <div class="talk_4"></div>
+
+    <div class="talk_1" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'">
+    <?php $talk='응원의 말' ?>
+    </div>
+    <div class="talk_2" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'"></div>
+    <div class="talk_3" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'"></div>
+    <div class="talk_4" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'"></div>
     </div>
     
     
