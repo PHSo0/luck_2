@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #QA_content{
+        #QA_content2{
             height: 863px;
             width: 83%;
             background-color: #FFFDF5;
@@ -15,12 +15,11 @@
             top: 53px;
             left: 294px;
         }
-<<<<<<< HEAD
-        p{
+        #QA_content3{
             position: absolute;
-            text-align : center;
-            top: 500px;
-            left: 380px;
+            width: 500px;
+            left: 874px;
+            top: 580px;
             font-family: 'Inter';
             font-style: normal;
             font-weight: 700;
@@ -28,10 +27,39 @@
             line-height: 39px;
             color: #000000;
         }
-=======
-           /*text-align : center;-->*/
-        
->>>>>>> ca1fadeb3da191505b943cd2c6b7a53a58603b62
+
+        p{
+            position: absolute;
+
+
+            left: 350px;
+            top: 243px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: #000000;
+            text-align : center;
+             }
+    line{
+        box-sizing: border-box;
+        position: absolute;
+        width: 937px;
+        height: 455px;
+        left: -235px;
+        top: 60px;
+        border: 2px solid #000000;
+    }
+    set{
+        box-sizing: border-box;
+        position: absolute;
+        width: 130px;
+        height: 48px;
+        left: -7px;
+        top: 0px;
+        border: 2px solid #000000;
+    }          
     </style>
 </head>
 <body>
@@ -46,9 +74,13 @@
     <?php
     include("../nav/nav(require).php");
     ?>
-    <div id = "QA_content">
-    <p>문의가 정상적으로 처리되었습니다</p>
-
+    <div id = "QA_content2">
+    <p>필요한 정보를 입력해주세요</p>
+    <p><line></line></p>
     </div>
+    <div id = "QA_content3">
+    <p>보내기</p>
+    <p><set></set></p>
+</div>
 </body>
 </html>
