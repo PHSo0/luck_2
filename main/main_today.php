@@ -12,7 +12,6 @@
             height: 793px;
             position : absolute;
             top : 123px;
-
         }
     </style>
 </head>

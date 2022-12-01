@@ -12,6 +12,7 @@
     border : none;
     background : #FFFDF5;
     }
+    
     .title {
     width :40%;
     height : 50px;
@@ -122,14 +123,33 @@
 
 #a{
     position:absolute;
-    top:62.5%;
+    top:63%;
     left:36.8%;
+    width:100px;
+}
+#a2{
+    position:absolute;
+    top:63%;
+    left:42%;
+    width:100px;
 }
 
 .a1{
     color: #442C2C;
     font-size:21px;
     width: 50%;
+    position:absolute;
+    top:-3px;
+    /* left:30px; */
+}
+.a2{
+    color: #442C2C;
+    font-size:21px;
+    width: 50%;
+    position:absolute;
+    top:-3px;
+    /* left:30px; */
+    
 }
 
 #b{
@@ -147,18 +167,22 @@
 
 #c{
     position:absolute;
-    top:72.5%;
+    top:71.5%;
     left:35.2%;
+    width:700px;
 }
 
 .c1{
     font-size: 18px;
     font-family: 'inter';
     color:#442C2C;
+    position:absolute;
+    top:-2.1px;
+    left:40px;
 }
 
 .d1{
-    font-size: 24px;
+    font-size: 50px;
     font-family: 'inter';
     color: white;
 }
@@ -167,7 +191,7 @@
     background-color: #442C2C;
     border: none;
     color: white;
-    font-size: 24px;
+    font-size: 50px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -211,6 +235,12 @@
     border-bottom: 1px solid #727272;
     height: 27px;
 }
+
+.date{
+    border:1px solid black;
+    width:120px;
+    height:22px;
+}
 </style>
 </head>
 <body> 
@@ -223,22 +253,27 @@
     <label class="joinpw">비밀번호<input type="password" name = "pw1"size="60" id="pw"></label>
     <label class="pwcheck">비밀번호 확인<input type="password" name = "pw2"size="60" id="pwch"></label>
     <label class="name">이름<input type="text" name = "name" size="60" id="na"></label>
-    <label class="sex">성별</label><label class="birth">생년월일</label>
+    <label class="sex">성별</label><label class="birth">&nbsp;&nbsp;&nbsp;생년월일</label>
 
     <div id="a">
-    <label class="a1"><input type="radio" name="sex" value ="female">  여성</label>
-    <label class="a1"><input type="radio" name="sex" value = "male">  남성</label>
+    <input type="radio" style="zoom:1.7" name="sex" value ="female"><label class="a1">&nbsp;여성</label>
     </div>
 
+    <div id="a2">
+    &nbsp; <input type="radio" style="zoom:1.7" name="sex" value = "male"><label class="a2">&nbsp;남성</label>
+    </div>
+    
     <div id="b">
-    <label class="b1"><input type="date" name = "birth"></label>
+    <label class="b1"><input class="date" type="date" name = "birth"></label>
     </div>
 
     <div id="c">
-    <lable class="c1"><input type="checkbox" name = "check" value = "ok">이용약관 및 개인정보수집 및 이용, 정보 수신에 동의합니다.</label>
+    <input type="checkbox" style="zoom:1.7" name = "check" value = "ok"><lable class="c1">이용약관 및 개인정보수집 및 이용, 정보 수신에 동의합니다.</label>    
     </div>
 
-    <label class="d1"><input type = "submit" class="button">회원가입</label>
+    <!-- <label class="d1"><input type = "submit" class="button">회원가입</label> -->
+    <button class="button">회원가입</button>
+
     </form>
 </body>
 </html>
