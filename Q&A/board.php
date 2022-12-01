@@ -1,3 +1,48 @@
+<!-- 
+    session_start();
+    if(! isset($_SESSION['id'])){
+        include("../header/no_login_header.php");
+    } else{
+        include("../header/yes_login_header.php");
+    }
+    ?>
+
+    include("../nav/nav(board).php");
+    ?>
+
+    <div id = "QA_content">
+
+    $count=1;
+    require_once('../DB/DB.php');
+        $stmt = $db -> prepare ('SELECT id FROM register');
+        $stmt -> execute();
+        $user[] = $stmt -> fetch();
+        echo $user[0];
+    /*for ($i=1; $i<=$d; $i++) {
+        echo "e";
+    // if($user['no']==$count && $count%4==1){
+    //     echo "<div class = 'board_1'><p class='post'>";
+    //     echo $user['Qtitle']."</p></div>";
+    //     $count++;
+    // } 
+    // else if ($user['no']==$count && $count%4 !=1){
+    //     echo "<div class = 'board_2'><p class='post'>";
+    //     echo $user['Qtitle']."</p></div>";
+    // }
+}*/
+
+    ?>
+<div class = "board_1"> <p class ="post"> <?= $user['Qtitle']?> </p></div>
+    <div class = "board_2"> <p class ="post"> </p></div>
+    <div class = "board_2"> <p class ="post"> 게시글3 </p></div>
+    <div class = "board_2"> <p class ="post"> 게시글4 </p></div> 
+    <input type = submit value="글쓰기" class = "sub_button" onclick = "location.href = 'board_submit.php'">
+
+
+
+</div>
+</body>
+</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,46 +54,152 @@
     <style>
         #QA_content{
             height: 863px;
-            width: 83%;
+            width: 77.5%;
             background-color: #FFFDF5;
             position: absolute;
             top: 53px;
             left: 294px;
         }
         .board_1{
-            text-align: center;
-            height : 50px;
-            border-top : 2px solid black;
+            margin : 160px 320px 0px 320px;
+            width : 100%;
+            height : 84px;  
+            text-align: left;
+            border-top : 1px solid black;
             border-bottom : 1px solid black;
             position: relative;
             top : 100px;
-            display: block;
+            display :inline-block;
         }
-        
+        .board_2{
+            margin : 0px 320px 0px 320px;
+            width : 100%;
+            height : 84px;  
+            text-align: left;
+            border-bottom : 1px solid black;
+            position: relative;
+            top : 100px;
+            display :inline-block;
+        }
+        .post{
+            margin:30px;
+        }
+        .sub_button{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+            background-color: #FFFDF5;
+            margin : 0px 320px 0px 320px;
+            height: 84px;  
+            position: relative;
+            top : 100px;
+            display : block;
+            margin-left: auto;
+        }
+        .num_div{
+            width: 55%;
+            height: 80px;
+            margin : 0px 320px 0px 320px;
+            position: absolute;
+            bottom: 50px;
+        }
+        .p_post{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align:center;
+        }
     </style>
 </head>
 <body>
-    <?php 
-    if(!isset($_SESSION['id'])){
-        include("../header/no_login_header.php");
-    } include("../header/yes_login_header.php");
-    ?>
     <?php
+    session_start();
+    if(! isset($_SESSION['id'])){
+        include("../header/no_login_header.php");
+    } else{
+        include("../header/yes_login_header.php");
+    }
     include("../nav/nav(board).php");
     ?>
-
     <div id = "QA_content">
-    <div class = "board_1">게시글1
-    </div>
-    <div class = "board_1">게시글2
-    </div>
-    <div class = "board_1">게시글2
-    </div>
-    <div class = "board_1">게시글2
-    </div>
-    <div class = "board_1">게시글2
-    </div>
 
-    </div>
+    <table>
+    <?php
+        require_once('../DB/DB.php');
+        $result = $db -> query("SELECT * FROM board ORDER BY no desc");
+        $result -> execute();
+        $result = $result->fetch();
+        $count=1;
+        $page=1;
+        switch($page){
+            case'1' :
+        if($result['no']==false){
+
+        }
+        else {
+            for($i=1; $i<=$result['no']; $i++){
+        ?>
+        <tbody>
+        <?php
+        if($count>=1 && $count<=4){
+            $page=1;
+            $a = $db -> query("SELECT * FROM board where no=$count");
+            $a -> execute();
+            $a = $a->fetch();
+        }
+        else{
+            $page++;
+            $a = $db -> query("SELECT * FROM board where no>=4*$page && no<4*($page-1)");
+            $a -> execute();
+            $a = $a->fetch();
+            $page=$count/4;
+        }
+        if($count %4 ==1){
+        ?>
+        <tr>
+          <td class = "board_1" onclick.href="view.php?no=<?php echo $a['no']?>"><p class="post"><?php echo $a['Qtitle']?></p></td>
+        </tr>
+        <?php } 
+        else {
+        ?>
+            <tr>
+            <td class = "board_2" onclick.href="view.php?no=<?php echo $a['no']?>"><p class="post"><?php echo $a['Qtitle']?></p></td>
+          </tr>  
+        <?php
+        }
+        $count++;   
+    }
+}
+break;
+        }
+        ?>
+    </tbody> 
+    </table> 
+    <input type = submit value="글쓰기" class = "sub_button" onclick = "location.href = 'board_submit.php'">
+    
+    <div class="num_div"><p class="p_post"> 
+    <?php
+    echo"< ";
+    for($i=1; $i<=$page; $i++){
+        echo "<form action = '../login/process.php?page=$i' method = 'post'>";
+        echo"<a href='list.php?page=$i'>$i </a>";
+    }
+    echo">";
+    ?>
+    
+    </p></div>
+</form>
+
+
+
+
+
+</div>
+
 </body>
 </html>

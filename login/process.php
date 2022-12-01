@@ -60,12 +60,28 @@
         break;
 
         case 'logout': 
-            unset($_SESSION['id']);
+            session_destroy();
+            /*unset($_SESSION['id']);*/
             header('location:../main/main.php');
-            
-            
-             
-         
+        break;
+
+        case 'QA' :
+        $Qtitle = $_POST['Qtitle'];
+        $Qcontent = $_POST['Qcontent'];
+        $sql = $db -> prepare('INSERT INTO board
+            (id, Qtitle, Qcontent) 
+            VALUE(:id, :Qtitle, :Qcontent)');
+
+        $stmt = $db -> prepare ("SELECT * FROM register");
+        $stmt -> execute();
+        $user = $stmt -> fetch();
+
+            $sql -> bindParam(':id',$user['id']);
+            $sql -> bindParam(':Qtitle',$Qtitle);
+            $sql -> bindParam(':Qcontent',$Qcontent);
+            $sql -> execute();
+        
+        header('location: ../Q&A/board.php');
         break;
     }
 ?>

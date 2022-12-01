@@ -63,14 +63,14 @@
     </style>
 </head>
 <body>
-    <?php 
-    if(!isset($_SESSION['id'])){
+<?php 
+    session_start();
+    if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
-    } include("../header/yes_login_header.php");
+    } else{
+        include("../header/yes_login_header.php");
+    }
     ?>
-
-    
-
     <?php
     include("../nav/nav(require).php");
     ?>

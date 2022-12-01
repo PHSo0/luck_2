@@ -27,7 +27,6 @@ div{
     display: inline-block;
     margin: 16px 131px 16px 33px; /*위 오 아 왼 */ 
 }
-
 .nav_b{
     font-family: 'Inter';
     font-style: normal;
@@ -39,7 +38,6 @@ div{
     display: inline-block;
     margin: 16px 131px 16px 33px;
 }
-
 .nav_c{
     font-family: 'Inter';
     font-style: normal;
@@ -64,7 +62,6 @@ div{
     border-bottom : 5px solid #000000;
     padding-bottom: 12px;
 }
-
 .nav_e{
     font-family: 'Inter';
     font-style: normal;
@@ -76,7 +73,6 @@ div{
     display: inline-block;
     margin: 16px 131px 16px 33px;
 }
-
 .nav_f{
     font-family: 'Inter';
     font-style: normal;
@@ -86,7 +82,6 @@ div{
     font-weight: 400;
     color: #2E1E1E;
     display: inline-block;
-   
 }
 </style>
 

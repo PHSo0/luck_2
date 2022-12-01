@@ -11,7 +11,7 @@
             width :100%;
             height: auto;
             position: absolute;
-            top : 100px;
+            top :120px;
         }
         #k_a{
             position: relative;
