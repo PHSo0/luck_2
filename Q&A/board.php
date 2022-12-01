@@ -99,6 +99,21 @@
             display : block;
             margin-left: auto;
         }
+        .num_div{
+            width: 55%;
+            height: 80px;
+            margin : 0px 320px 0px 320px;
+            position: absolute;
+            bottom: 50px;
+        }
+        .p_post{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            text-align:center;
+        }
     </style>
 </head>
 <body>
@@ -120,6 +135,9 @@
         $result -> execute();
         $result = $result->fetch();
         $count=1;
+        $page=1;
+        switch($page){
+            case'1' :
         if($result['no']==false){
 
         }
@@ -128,9 +146,19 @@
         ?>
         <tbody>
         <?php
-        $a = $db -> query("SELECT * FROM board where no=$count");
-        $a -> execute();
-        $a = $a->fetch();
+        if($count>=1 && $count<=4){
+            $page=1;
+            $a = $db -> query("SELECT * FROM board where no=$count");
+            $a -> execute();
+            $a = $a->fetch();
+        }
+        else{
+            $page++;
+            $a = $db -> query("SELECT * FROM board where no>=4*$page && no<4*($page-1)");
+            $a -> execute();
+            $a = $a->fetch();
+            $page=$count/4;
+        }
         if($count %4 ==1){
         ?>
         <tr>
@@ -144,13 +172,28 @@
           </tr>  
         <?php
         }
-        $count++;
+        $count++;   
     }
 }
+break;
+        }
         ?>
     </tbody> 
     </table> 
     <input type = submit value="글쓰기" class = "sub_button" onclick = "location.href = 'board_submit.php'">
+    
+    <div class="num_div"><p class="p_post"> 
+    <?php
+    echo"< ";
+    for($i=1; $i<=$page; $i++){
+        echo "<form action = '../login/process.php?page=$i' method = 'post'>";
+        echo"<a href='list.php?page=$i'>$i </a>";
+    }
+    echo">";
+    ?>
+    
+    </p></div>
+</form>
 
 
 
