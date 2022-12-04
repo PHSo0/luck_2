@@ -273,6 +273,9 @@
 
     <!-- <label class="d1"><input type = "submit" class="button">회원가입</label> -->
     <button class="button">회원가입</button>
+    <!-- <lable class="c1"><input type="checkbox" style="zoom:1.7" name = "check" value = "ok">이용약관 및 개인정보수집 및 이용, 정보 수신에 동의합니다.</label> -->
+
+    <label class="d1"><input type = "submit" class="button" value="회원가입"></label>
 
     </form>
 </body>
