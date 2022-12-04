@@ -1,3 +1,12 @@
+<?php
+
+require_once("../DB/DB.php");
+$bNo = $_GET['bno'];
+
+$sql = $db->prepare('SELECT Qtitle, Qcontent, id from board where no = '.$bNo);
+$sql ->execute();
+$row = $sql->fetch(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +23,7 @@
             top: 53px;
             left: 294px;
         }
-.Qtitle{
+        .Qtitle{
     width : 70%;
     height : 64px;
     border : 2px solid #000000;
@@ -53,21 +62,24 @@
     bottom : 90px;
     right : 20%;
 }
-.su_btn{
+.we{
+    margin: 15px;
+}
+.id_box{
+    background-color: #FFFDF5;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    border: 2px solid #000000;
-    position : relative;
-    margin-left: 75%;
-    margin-top : 800px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    position : absolute;
+    bottom : 90px;
+    right : 20%;
 }
 </style>
 </head>
 <body>
-<?php 
+    <?php
     session_start();
     if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
@@ -75,28 +87,23 @@
         include("../header/yes_login_header.php");
     }
     ?>
-    <?php
-    include("../nav/nav(board).php");
+     <?php
+     include("../nav/nav(board).php");
     ?>
-<div id = "QA_content">
-<?php if(isset($_SESSION['id'])){ ?>
-<form action = "../login/process.php?mode=QA" method = "post">
-<input type = "text" class = "Qtitle" placeholder="제목을 입력해주세요" name = "Qtitle">
-<textarea class = "Qcontent" name = "Qcontent" placeholder="내용"></textarea>
-<div class = "id_box"> 
-<?php
-    echo $_SESSION['id'];
-?>
-</div>
-<input type = "submit" value = "보내기" class = "su_btn">
-</form>
-<?php }
-else{
-    include("no_login.php");
-}
-?>
+    <div id = "QA_content">
+        
+        <div class="Qtitle"><p class="we"><?php echo $row['Qtitle'];
+        ?></p></div>
+        <div class="Qcontent"><p class = "we"><?=$row['Qcontent'];?></div>
+        <div class = "id_box"> 
+        <?php
+        echo 'ID : '.$row['id'];
+        ?>
+        </div>
+    </div>
 
-</div>
+
+
 
 </body>
 </html>

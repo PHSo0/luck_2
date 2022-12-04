@@ -7,14 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #QA_content{
-            height: 863px;
-            width: 77.5%;
-            background-color: #FFFDF5;
-            position: absolute;
-            top: 53px;
-            left: 294px;
-        }
         .employ{
             font-family: 'Inter';
             font-style: normal;
@@ -31,21 +23,6 @@
     </style>
 </head>
 <body>
-<?php 
-    session_start();
-    if(! isset($_SESSION['id'])){
-        include("../header/no_login_header.php");
-    } else{
-        include("../header/yes_login_header.php");
-    }
-    ?>
-    <?php
-    include("../nav/nav(employ).php");
-    ?>
-    <div id = "QA_content">
-    <p class = "employ"> 이메일을 적어주세요</p>
-    
-
-    </div>
+    <p class = "employ">로그인이 필요합니다.</p>
 </body>
 </html>

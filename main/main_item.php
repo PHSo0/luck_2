@@ -28,7 +28,7 @@
     if(! isset($_SESSION['id'])){
         include("../no_login/no_login_ddi.php");
     } else{
-        // 행운의 아이템 컨텐츠 부분
+        include("content/item.php");
     }
     ?>
     <!-- <div class="content">
