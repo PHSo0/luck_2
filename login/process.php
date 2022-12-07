@@ -87,7 +87,7 @@
 		    
            
             
-        header('location:../Q&A/b.php?bno='.$bNo);
+        header('location:../Q&A/board.php?bno='.$bNo);
         break;
         
 

@@ -24,7 +24,7 @@
             color: #000000;
             text-align : center;
             position:relative;
-            top : 25%;
+            top : 200px;
             }
             .line{
                 box-sizing: border-box;
@@ -34,6 +34,8 @@
                 border: 2px solid #000000;
                 margin-left : 7%;
                 top:230px;
+                background-color: #FFFDF5 ;
+                font-size : 30px;
             }
             .sub_btn{
             font-family: 'Inter';
@@ -61,7 +63,7 @@
     <?php
     include("../nav/nav(require).php");
     ?>
-    <div id = "QA_content"><form>
+    <div id = "QA_content"><form action="require_complete.php">
         <p class="re">필요한 정보를 입력해주세요</p>
         <textarea class="line"></textarea>
         <input type="submit" value="보내기" class = "sub_btn" onclick = "location.href = '../Q$A/board_submit.php'">
