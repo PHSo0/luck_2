@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #QA_content{
+         #QA_content{
             height: 863px;
             width: 77.5%;
             background-color: #FFFDF5;
@@ -19,10 +19,10 @@
             font-family: 'Inter';
             font-style: normal;
             font-size: 32px;
-            font-weight: 400;
+            font-weight: 700;
             line-height: 39px;
             color: #000000;
-            position: absolute;
+            position: relative;
             top: 50%;
             margin-top: -50px;
             margin-left : 37%;
@@ -31,8 +31,8 @@
     </style>
 </head>
 <body>
-<?php 
-    session_start();
+    <?php
+session_start();
     if(! isset($_SESSION['id'])){
         include("../header/no_login_header.php");
     } else{
@@ -40,12 +40,10 @@
     }
     ?>
     <?php
-    include("../nav/nav(employ).php");
+    include("../nav/nav(require).php");
     ?>
-    <div id = "QA_content">
-    <p class = "employ"> 이메일을 적어주세요</p>
-    
-
-    </div>
+     <div id = "QA_content">
+    <p class = "employ">문의가 정상적으로 처리되었습니다.</p>
+</div>
 </body>
 </html>

@@ -70,18 +70,28 @@
         $Qcontent = $_POST['Qcontent'];
         $sql = $db -> prepare('INSERT INTO board
             (id, Qtitle, Qcontent) 
-            VALUE(:id, :Qtitle, :Qcontent)');
+            VALUES(:id, :Qtitle, :Qcontent)');
 
-        $stmt = $db -> prepare ("SELECT * FROM register");
-        $stmt -> execute();
-        $user = $stmt -> fetch();
-
-            $sql -> bindParam(':id',$user['id']);
+            $sql -> bindParam(':id',$_SESSION['id']);
             $sql -> bindParam(':Qtitle',$Qtitle);
             $sql -> bindParam(':Qcontent',$Qcontent);
+            //$db ->beginTransaction();
             $sql -> execute();
-        
-        header('location: ../Q&A/board.php');
+            $s = $sql->fetch();
+            
+            $bNo=$db ->lastInsertId();
+            //$db ->commit();   
+                   
+           
+            
+		    
+           
+            
+        header('location:../Q&A/board.php?bno='.$bNo);
         break;
+        
+
+        case 'QA_view' :
+            
     }
 ?>
