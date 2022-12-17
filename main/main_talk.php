@@ -66,16 +66,10 @@
     
     <img class="img_s" src="../icon/talk/찐완성.png" width="1440px" height="800px">
 
-    <div class="talk_1" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'">
-    <?php $talk='응원의 말' ?>
-    </div>
-    <div class="talk_2" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'"></div>
-    <div class="talk_3" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'"></div>
-    <div class="talk_4" onClick="location.href='../../git_wp/듣고싶은말/듣고싶은말.php'"></div>
-    </div>
-    
-    
-
-    
+    <div class="talk_1" onClick="location.href='../../git_wp/main/듣고싶은말.php'"><?php include '듣고싶은말.php'; echo $test2; ?></div>
+    <div class="talk_2" onClick="location.href='../../git_wp/main/듣고싶은말.php'"></div>
+    <div class="talk_3" onClick="location.href='../../git_wp/main/듣고싶은말.php'"></div>
+    <div class="talk_4" onClick="location.href='../../git_wp/main/듣고싶은말.php'"></div>
+    </div> 
 </body>
 </html> 
