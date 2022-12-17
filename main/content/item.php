@@ -13,12 +13,13 @@
         position : absolute;
         top : 123px;
     }
-    .i_content{
+    .i_content1{
         background-color:#fffdf5;
         width: 100%;
         height: 215px;
         position: absolute;
-        top: 215px;
+        top: 150px;
+        align : justify;
     }
     .circle{
         width: 215px;
@@ -28,8 +29,18 @@
         border: 3px solid #C98724;
         position: relative;
         display : inline-block;
-        margin: 0px 250px 0px 180px;
+        margin: 0px 120px 0px 180px;
         
+    }
+    img{
+        position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color:#FFFFFF;
+    border-radius:50%;
     }
     .circle1{
         width: 215px;
@@ -39,35 +50,48 @@
         border: 3px solid #C98724;
         position: relative;
         display : inline-block;
-        margin: 0px 180px 0px 180px;
+        margin: 0px 180px 0px 120px;
         
+    } 
+    .circle2{
+        width: 215px;
+        height: 215px;
+        background-color: #fffdf5;
+        border-radius: 50%;
+        border: 3px solid #C98724;
+        position: relative;
+        display : inline-block;
+        margin: 0px 180px ;
+        
+    } 
+    .i_content2{
+        background-color:#fffdf5;
+        width: 100%;
+        height: 215px;
+        position: absolute;
+        top: 480px;
+        align : justify;
     }
-
     
     </style>
 </head>
 <body>
 <div class="content_item">
-    <div class="i_content">
-    <span class="circle">
-</span>
-<span class="circle">
-</span>
-<span class="circle1">
-</span>
-</div>
-</div>
-<!-- <div class="content_item">
-    <div class="circle1">
-        <img src="pic/색강.png" alt="색강">
+    <div class="i_content1">
+        <div class="circle">
+            <img src="pic/색강.png" alt="색강">
+        </div>
+        <div class="circle2">   
+            <img src="pic/숫자.png" alt="숫자">
+        </div>
+        <div class="circle1">
+            <img src="pic/아이템.png" alt="아이템">
+        </div>
     </div>
-    <div class="ch1"><p>당신의 행운의 아이템은 000입니다</p></div>
-    <div class="circle2">
-        <img src="pic/숫자.png" alt="숫자"></div>
-    <div class="ch2"><p>당신의 행운의 아이템은 000입니다</p></div>
-    <div class="circle3">
-        <img src="pic/아이템.png" alt="아이템"></div>
-    <div class="ch3"><p>당신의 행운의 아이템은 000입니다</p></div>
-</div> -->
+    <div class="i_content2">
+
+    </div>
+</div>
+
 </body>
 </html>
