@@ -64,7 +64,7 @@
         include("../main_nav/talk.php");
     ?>
 <main>
-    <div class="talkbox1"><p class="ch"><b>위로의 말<b></p></div>
+    <div class="talkbox1"><p class="ch"><b><?php $test2='응원의 말'; ?><b></p></div>
     <div class="whitebox"><p></p></div>
     <div class="talkbox2"><p class="ch"><b>다른 말도 듣고 싶어요!<b></p></div>
     </main>

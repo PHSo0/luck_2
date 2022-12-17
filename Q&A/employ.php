@@ -9,7 +9,7 @@
     <style>
         #QA_content{
             height: 863px;
-            width: 83%;
+            width: 77.5%;
             background-color: #FFFDF5;
             position: absolute;
             top: 53px;

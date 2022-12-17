@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
     <style>
-    body {background-color: #FFFDF5;}
+    /* body {background-color: #FFFDF5;} */
     .todaybox {
     box-sizing: border-box;
     position: absolute;
@@ -30,8 +30,8 @@
     position: absolute;
 }
     .circle1 img{
-        position: absolute;
-     top: 0;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -60,7 +60,7 @@
     border: 2px solid #B37C3A;
     }
     .circle2{
-        width: 273px;
+    width: 273px;
     height: 273px;
     left: 58px;
     top: 670px;
@@ -68,10 +68,10 @@
     border-radius: 50%;
     border: 3px solid #C98724;
     position: absolute;
-}
+    }
     .circle2 img{
-        position: absolute;
-     top: 0;
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -100,7 +100,7 @@
     border: 2px solid #B37C3A;
     }
     .circle3{
-        width: 250px;
+    width: 250px;
     height: 250px;
     left: 71px;
     top: 1060px;
@@ -140,7 +140,7 @@
     border: 2px solid #B37C3A;
     }
     .circle4{
-        width: 261px;
+    width: 261px;
     height: 261px;
     left: 65px;
     top: 1423px;
@@ -205,14 +205,6 @@
     
     </style>
     <body>
-    <?php
-    if(! isset($_SESSION['id'])){
-        include("../header/yes_login_header.php");
-    } else{
-        include("../header/no_login_header.php");
-    }   
-        include("../main_nav/today.php");
-    ?>
     
 <main>
     <div class="todaybox"><p class="ch1">

@@ -8,7 +8,7 @@
 <style>
 #QA_content{
             height: 863px;
-            width: 83%;
+            width: 77.5%;
             background-color: #FFFDF5;
             position: absolute;
             top: 53px;
@@ -42,17 +42,6 @@
     top : 120px;
     margin-left : 12%;
 }
-.id_box{
-    background-color: #FFFDF5;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    position : absolute;
-    bottom : 90px;
-    right : 20%;
-}
 .su_btn{
     font-family: 'Inter';
     font-style: normal;
@@ -79,16 +68,18 @@
     include("../nav/nav(board).php");
     ?>
 <div id = "QA_content">
+<?php if(isset($_SESSION['id'])){ ?>
 <form action = "../login/process.php?mode=QA" method = "post">
-<input type = "text" class = "Qtitle" placeholder="제목입력" name = "Qtitle">
-<textarea class = "Qcontent" name = "Qcontent" ></textarea>
-<div class = "id_box"> 
-<?php
-    echo $_SESSION['id'];
-?>
-</div>
+<input type = "text" class = "Qtitle" placeholder="제목을 입력해주세요" name = "Qtitle">
+<textarea class = "Qcontent" name = "Qcontent" placeholder="내용"></textarea>
 <input type = "submit" value = "보내기" class = "su_btn">
 </form>
+<?php }
+else{
+    include("no_login.php");
+}
+?>
+
 </div>
 
 </body>
