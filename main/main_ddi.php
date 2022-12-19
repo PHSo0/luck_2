@@ -15,10 +15,7 @@
     body{
         background-color: #FFFDF5;
     }
-img{
-    width : 100px;
-    height : 100px;
-}
+
 section{
     width :80%;
     /* height: 793px; */
@@ -49,7 +46,7 @@ section{
     top:145%;
     }
 
-    .ddiimgbox img{
+    /* . img{
     position: absolute;
     top: 0;
     left: 0;
@@ -57,75 +54,83 @@ section{
     height: 100%;
     object-fit: cover;
     border-radius:50%;
-    }
+    } */
+    .dddi{
+    width: 200px;
+    height: 200px;
+    left:5%;
+    top:23%;
+    border-radius: 50%;
+    position: absolute;
+}
 
-    .쥐{
+    .쥐띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#C8D7FF;
     }
-    .소{
+    .소띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:gray;
     }
-    .호랑이{
+    .호랑이띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#FFDCB4;
     }
-    .토끼{
+    .토끼띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#FFE7F4;
     }
-    .용{
+    .용띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:pink;
     }
-    .뱀{
+    .뱀띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:yellow;
     }
-    .말{
+    .말띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:navy;
     }
-    .양{
+    .양띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#F9FFB7;
     }
-    .원숭이{
+    .원숭이띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#AEA08B;
     }
-    .닭{
+    .닭띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#DAF4D8;
     }
-    .개{
+    .개띠{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:yellowgreen;
     }
-    .돼지{
+    .돼지띠{
         width:200px;
         height:200px;
         border-radius:90px;
@@ -182,28 +187,29 @@ $html = file_get_html('https://search.naver.com/search.naver?where=nexearch&sm=t
 ?>
 
 
-<div class="ddibox"><p class="ctitle"><?php echo $type;?></p>
-        <div class="ddibigbox">
-            <div class="<?= $type ?>">  
-                <?php echo "<img src='../icon/띠/$type.png'/>"?>
+<div class="ddibox"><p class="ctitle"><?=$type?></p>
+        <div class="ddibigbox"> 
+            <div class = "dddi">
+                <img src = "../icon/띠/<?=$type?>.png" class="<?= $type ?>" style="object-fit: cover;">
+                <?php echo $html->find('.detail p._cs_fortune_text', 0)->outertext; ?>
             </div>
         </div>
     </div> 
 
 <section>
     <div class="mainSlide">
-        <div><a href="main_ddi.php?type=쥐"><img class = "쥐" src="../icon/띠/쥐.png"></a></div>
-        <div><a href="main_ddi.php?type=소"><img class = "소" src="../icon/띠/소.png"></a></div>
-        <div><a href="main_ddi.php?type=호랑이"><img class = "호랑이" src="../icon/띠/호랑이.png"></a></div>
-        <div><a href="main_ddi.php?type=토끼"><img class = "토끼" src="../icon/띠/토끼.png"></a></div>
-        <div><a href="main_ddi.php?type=용"><img class = "용" src="../icon/띠/용.png"></a></div>
-        <div><a href="main_ddi.php?type=뱀"><img class = "뱀" src="../icon/띠/뱀.png"></a></div>
-        <div><a href="main_ddi.php?type=말"><img class = "말" src="../icon/띠/말.png"></a></div>
-        <div><a href="main_ddi.php?type=양"><img class = "양" src="../icon/띠/양.png"></a></div>
-        <div><a href="main_ddi.php?type=원숭이"><img class = "원숭이" src="../icon/띠/원숭이.png"></a></div>
-        <div><a href="main_ddi.php?type=닭"><img class = "닭" src="../icon/띠/닭.png"></a></div>
-        <div><a href="main_ddi.php?type=개"><img class = "개" src="../icon/띠/개.png"></a></div>
-        <div><a href="main_ddi.php?type=돼지"><img class = "돼지" src="../icon/띠/돼지.png"></a></div>
+        <div><a href="main_ddi.php?type=쥐띠"><img class = "쥐띠" src="../icon/띠/쥐띠.png"></a></div>
+        <div><a href="main_ddi.php?type=소띠"><img class = "소띠" src="../icon/띠/소띠.png"></a></div>
+        <div><a href="main_ddi.php?type=호랑이띠"><img class = "호랑이띠" src="../icon/띠/호랑이띠.png"></a></div>
+        <div><a href="main_ddi.php?type=토끼띠"><img class = "토끼띠" src="../icon/띠/토끼띠.png"></a></div>
+        <div><a href="main_ddi.php?type=용띠"><img class = "용띠" src="../icon/띠/용띠.png"></a></div>
+        <div><a href="main_ddi.php?type=뱀띠"><img class = "뱀띠" src="../icon/띠/뱀띠.png"></a></div>
+        <div><a href="main_ddi.php?type=말띠"><img class = "말띠" src="../icon/띠/말띠.png"></a></div>
+        <div><a href="main_ddi.php?type=양띠"><img class = "양띠" src="../icon/띠/양띠.png"></a></div>
+        <div><a href="main_ddi.php?type=원숭이띠"><img class = "원숭이띠" src="../icon/띠/원숭이띠.png"></a></div>
+        <div><a href="main_ddi.php?type=닭띠"><img class = "닭띠" src="../icon/띠/닭띠.png"></a></div>
+        <div><a href="main_ddi.php?type=개띠"><img class = "개띠" src="../icon/띠/개띠.png"></a></div>
+        <div><a href="main_ddi.php?type=돼지띠"><img class = "돼지띠" src="../icon/띠/돼지띠.png"></a></div>
       </div>  
 </section>    
 </body>
