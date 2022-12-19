@@ -126,21 +126,27 @@
     }
     </style>
     <body>
+    <?php 
+    require_once('../DB/DB.php');
+    $sql = $db -> prepare("SELECT * FROM item ORDER BY RAND() LIMIT 1");
+    $sql -> execute();
+    $row = $sql -> fetch();
+    ?>
         <div class="content_item">
 
     <div class="circle1">
-        <img src="pic/색강.png" alt="색강"></div>
-        <p class="item1">당신의 행운의 아이템은 000입니다</p>
+        <img src="pic/아이템.png" alt="아이템"></div>
+        <p class="item1">당신의 행운의 아이템은 <?=$row['item']?>입니다</p>
     </div>
 
     <div class="circle2">
-        <img src="pic/숫자.png" alt="숫자"></div>
-            <div class="item2"><p>당신의 행운의 아이템은 000입니다</p>
+        <img src="pic/색깔.png" alt="색깔"></div>
+            <div class="item2"><p>당신의 행운의 색깔은 <?=$row['color']?>입니다</p>
     </div>
 
     <div class="circle3">
-        <img src="pic/아이템.png" alt="아이템"></div>
-            <div class="item3"><p>당신의 행운의 아이템은 000입니다</p>
+        <img src="pic/숫자.png" alt="숫자"></div>
+            <div class="item3"><p>당신의 행운의 숫자은 <?=$row['num']?>입니다</p>
     </div>
 
 </div>
