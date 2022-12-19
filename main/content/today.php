@@ -226,7 +226,7 @@
         height:220px;
         position:absolute;
         left:20.5%;
-        top:82.2%;
+        top:79%;
         background-color:#FFFDF5;
         font-size:1.2em;
     }
@@ -236,7 +236,7 @@
         height:220px;
         position:absolute;
         left:20.5%;
-        top:120%;
+        top:117%;
         background-color:#FFFDF5;
         font-size:1.2em;
     }
@@ -246,7 +246,7 @@
         height:220px;
         position:absolute;
         left:20.5%;
-        top:165%;
+        top:157%;
         background-color:#FFFDF5;
         font-size:1.2em;
     }

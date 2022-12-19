@@ -19,7 +19,7 @@
     height: 218px;
     position:absolute;
     left:14%;
-    top:20%;
+    top:20%;*
     background-color: #fffdf5;
     border-radius: 50%;
     border: 3px solid #C98724;
@@ -35,16 +35,16 @@
     background-color:#FFFFFF;
     border-radius:50%;
     }
-    .circle2{
-    width: 218px;
-    height: 218px;
-    left:42%;
-    top:29%;
-    background-color: #fffdf5;
-    border-radius: 50%;
-    border: 3px solid #C98724;
-    position: absolute;
-}
+        .circle2{
+        width: 218px;
+        height: 218px;
+        left:42%;
+        top:29%;
+        background-color: #fffdf5;
+        border-radius: 50%;
+        border: 3px solid #C98724;
+        position: absolute;
+    }
     .circle2 img{
     position: absolute;
     top: 0;

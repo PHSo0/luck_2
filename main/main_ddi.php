@@ -151,7 +151,26 @@ section{
     color: #FFFFFF;
     -webkit-text-stroke: 3px #AB6700;
 }
+.ddiwrite{
+    width:800px;
+    height:200px;
+    position:absolute;
+    top:10%;
+    left:150%;
+    font-size:1.8em;
+}
 
+.prevArrow{
+    position:absolute;
+    left:-11.5%;
+    top:10%;
+}
+
+.nextArrow{
+    position:absolute;
+    left:99.5%;
+    top:5%;
+}
 </style>
 </head>
 
@@ -191,7 +210,9 @@ $html = file_get_html('https://search.naver.com/search.naver?where=nexearch&sm=t
         <div class="ddibigbox"> 
             <div class = "dddi">
                 <img src = "../icon/띠/<?=$type?>.png" class="<?= $type ?>" style="object-fit: cover;">
-                <?php echo $html->find('.detail p._cs_fortune_text', 0)->outertext; ?>
+                    <div class="ddiwrite">
+                    <?php echo $html->find('.detail p._cs_fortune_text', 0)->outertext; ?>
+                    </div>
             </div>
         </div>
     </div> 
@@ -211,6 +232,13 @@ $html = file_get_html('https://search.naver.com/search.naver?where=nexearch&sm=t
         <div><a href="main_ddi.php?type=개띠"><img class = "개띠" src="../icon/띠/개띠.png"></a></div>
         <div><a href="main_ddi.php?type=돼지띠"><img class = "돼지띠" src="../icon/띠/돼지띠.png"></a></div>
       </div>  
+
+    <div class="btn">
+        <div class="prevArrow"><img style="width: 150px; height: 150px;" src="../icon/버튼/왼쪽.png"></div>
+        <div class="nextArrow"><img style="width: 150px; height: 160px;"src="../icon/버튼/오른쪽.png"></div>        
+    </div>   
+
+
 </section>    
 </body>
 </html>
