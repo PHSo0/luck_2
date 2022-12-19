@@ -8,12 +8,13 @@
     </head>
     <style>
     body {background-color: #FFFDF5;}
+
     .talkbox1 {
     box-sizing: border-box;
     position: absolute;
     width: 324px;
     height: 72px;
-    left: 48px;
+    margin-left:10%;    
     top: 188px;
     background: #FFF1A5;
     border: 4px solid #C98724;
@@ -21,10 +22,10 @@
     }
     .whitebox {
     box-sizing: border-box;
-    position: absolute;
+    position: absolute; 
     width: 1334px;
     height: 545px;
-    left: 48px;
+    margin-left:10%;
     top: 291px;
     background: #FFFFFF;
     border: 5px solid #A55E0B;
@@ -35,7 +36,7 @@
     position: absolute;
     width: 499px;
     height: 72px;
-    left: 883px;
+    margin-left:58.8%;    
     top: 867px;
     background: #FFF1A5;
     border: 4px solid #C98724;
@@ -64,7 +65,8 @@
         include("../main_nav/talk.php");
     ?>
 <main>
-    <div class="talkbox1"><p class="ch"><b><?php $test2='응원의 말'; ?><b></p></div>
+    <div class="talkbox1"><p class="ch"><b>위로의 말</b></p></div>
+
     <div class="whitebox"><p></p></div>
     <div class="talkbox2"><p class="ch"><b>다른 말도 듣고 싶어요!<b></p></div>
     </main>

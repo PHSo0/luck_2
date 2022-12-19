@@ -57,7 +57,13 @@
             $_SESSION['name'] = $row['name'];
             $_SESSION['sex'] = $row['sex'];
             $_SESSION['birth'] = $row['birth'];
+<<<<<<< HEAD
         header('location:../main/pracd/a.php');
+=======
+
+
+        header('location:../main/a.php');
+>>>>>>> 4242d0e31c356f0bbbf352e692a3fc5554c8aca8
         break;
 
         case 'logout': 
