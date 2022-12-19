@@ -142,8 +142,10 @@ section{
     color: #FFFFFF;
     -webkit-text-stroke: 3px #AB6700;
 }
-.cbox_img{
 
+.aniaml{
+    width:100px;
+    height:100px;
 }
 </style>
 </head>
@@ -183,7 +185,7 @@ $html = file_get_html('https://search.naver.com/search.naver?where=nexearch&sm=t
 <div class="ddibox"><p class="ctitle"><?php echo $type;?></p>
         <div class="ddibigbox">
             <div class="ddiimgbox">
-            <div class="cbox_img"> <?php echo "<img src='../icon/띠/$type.png'/>"?></div>
+            <div class="animal"> <?php echo "<img src='../icon/띠/$type.png'/>"?></div>
             </div>
         </div>
     </div> 
