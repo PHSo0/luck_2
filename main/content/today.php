@@ -171,6 +171,7 @@
     border: 3px solid #C98724;
     border-radius: 20px;
     }
+
     .hr4 {
     position: absolute;
     width: 1360px;
@@ -189,18 +190,21 @@
             position: relative;
             text-align: center;
             top : 8px;
+            font-weight: 900;
         }
+
     .ch1{
         font-family: 'Inter';
         font-style: normal;
         font-size: 43px;
         line-height: 52px;
         color: #ffffff;
-        -webkit-text-stroke: 2.2px #AB6700;
+        -webkit-text-stroke: 3px #AB6700;
         position: relative;
         text-align: center;
-        letter-spacing: 0.05em;
+        /* letter-spacing: 0.05em; */
         top : 8px;
+        font-weight: 900;
         }
     
     </style>
@@ -216,19 +220,19 @@ document.write(date);
     <div class="circle1">
         <img src="pic/금전.png" alt="금전">
     </div>
-    <div class="box1"><p class="ch"><b>금전운</b></p></div>
+    <div class="box1"><p class="ch">금전운</p></div>
     <div class="hr1"></div>
     <div class="circle2">
         <img src="pic/학업.png" alt="학업"></div>
-    <div class="box2"><p class="ch"><b>학업운</b></p></div>
+    <div class="box2"><p class="ch">학업운</p></div>
     <div class="hr2"></div>
     <div class="circle3">
         <img src="pic/직업.png" alt="직업"></div>
-    <div class="box3"><p class="ch"><b>직업운</b></p></div>
+    <div class="box3"><p class="ch">직업운</p></div>
     <div class="hr3"></div>
     <div class="circle4">
         <img src="pic/연애.png" alt="연애"></div>
-    <div class="box4"><p class="ch"><b>연애운</b></p></div>
+    <div class="box4"><p class="ch">연애운</p></div>
     <div class="hr4"></div>
     </main>
     </body>

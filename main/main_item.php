@@ -28,7 +28,7 @@
     if(! isset($_SESSION['id'])){
         include("../no_login/no_login_ddi.php");
     } else{
-        include("content/item.php");
+        include("content/item1.php");
     }
     ?>
     <!-- <div class="content">

@@ -56,28 +56,26 @@
 
 <body>
     <?php
-    session_start();
-    if(! isset($_SESSION['id'])){
-        include("../header/no_login_header.php");
-    } else{
-        include("../header/yes_login_header.php");
-    }
-    include("../main_nav/cookie.php");
-    ?>
+   session_start();
+   if(! isset($_SESSION['id'])){
+       include("../header/no_login_header.php");
+   } else{
+       include("../header/yes_login_header.php");
+   }
+   include("../main_nav/cookie.php");
+?>
     <div class="cookie_content">
     <div id="k_a"> 
     <div id="k_b">
-    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
-    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
-    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240"> <br>
-    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
-    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
-    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240" onclick="location.href='goodluck.php'">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240" onclick="location.href='goodluck.php'">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240" onclick="location.href='goodluck.php'"> <br>
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240" onclick="location.href='goodluck.php'">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240" onclick="location.href='goodluck.php'">
+    <img class="icon_1" src="../icon/포춘쿠키/2.png" width="240" height="240" onclick="location.href='goodluck.php'">
     </div>  </div>
     <p class="ch"><b>쿠키를 골라주세요</b></p>
     
     </div>
-    
-    
 </body>
 </html>

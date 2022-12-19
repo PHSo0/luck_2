@@ -55,8 +55,11 @@
 
             $_SESSION['id'] = $row['id'];
             $_SESSION['name'] = $row['name'];
+            $_SESSION['sex'] = $row['sex'];
+            $_SESSION['birth'] = $row['birth'];
 
-        header('location:../main/main.php');
+
+        header('location:../main/a.php');
         break;
 
         case 'logout': 

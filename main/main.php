@@ -79,6 +79,49 @@ footer{
     margin-top : 26px;  
     background-color: #442c2c;
 }
+
+.x1{
+    /* border: 1px solid yellow; */
+    border-radius:25px;
+    width:252px;
+    height:50px;
+    position:absolute;
+    margin-left:53%;
+    margin-top:18.8%;
+    opacity: 0;
+}
+.x2{
+    /* border: 1px solid green; */
+    border-radius:25px;
+    width:252px;
+    height:50px;
+    position:absolute;
+    margin-left:82.2%;
+    margin-top:7.7%;
+    opacity: 0;
+}
+
+.x3{
+    /* border: 1px solid blue; */
+    border-radius:25px;
+    width:252px;
+    height:50px;
+    position:absolute;
+    margin-left:37%;
+    margin-top:28.6%;
+    opacity: 0;
+}
+
+.x4{
+    /* border: 1px solid pink; */
+    border-radius:25px;
+    width:252px;
+    height:50px;
+    position:absolute;
+    margin-left:65.1%;
+    margin-top:30.8%;
+    opacity: 0;
+}
 </style>
 </head>
 <body> 
@@ -93,6 +136,10 @@ footer{
     include("../main_nav/none.php");
     ?>
     <div id = "mmcontent">
+        <div class="x1" onclick="location.href='main_cookie.php'"></div>
+        <div class="x2" onclick="location.href='main_today.php'"></div>
+        <div class="x3" onclick="location.href='main_talk.php'"></div>
+        <div class="x4" onclick="location.href='main_item.php'"></div>
     <img class="main_a" src="pic/찐노랑.png" width="1200" height="450">
     <img class="main_b" src="pic/찐초록.png" height="450">
     <img class="main_c" src="pic/찐파랑.png" width="1000" height="280">
