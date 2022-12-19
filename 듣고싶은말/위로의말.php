@@ -54,6 +54,16 @@
         text-align: center;
         letter-spacing: 0.05em;
         }
+        .coo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align : center;
+    position : relative;
+    top : 200px;
+}
     </style>
     <body>
     <?php
@@ -67,7 +77,15 @@
 <main>
     <div class="talkbox1"><p class="ch"><b>위로의 말</b></p></div>
 
-    <div class="whitebox"><p></p></div>
-    <div class="talkbox2"><p class="ch"><b>다른 말도 듣고 싶어요!<b></p></div>
+    <div class="whitebox">
+    <?php 
+    require_once('../DB/DB.php');
+    $sql = $db -> prepare("SELECT d FROM talk ORDER BY RAND() LIMIT 1");
+    $sql -> execute();
+    $row = $sql -> fetch();
+    ?>
+    <p class = "coo"> <?=$row['d']?></p>
+    </div>
+    <div class="talkbox2" onclick="location.href='../main/main_talk.php'"><p class="ch"><b>다른 말도 듣고 싶어요!<b></p></div>
     </main>
     </body>
