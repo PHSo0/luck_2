@@ -30,6 +30,16 @@ body{
     margin-left:11%;
     margin-top:23%;
 }
+.cooo{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align : center;
+    position : relative;
+    top : 180px;
+}
 </style> 
 </head>
 
@@ -45,6 +55,13 @@ body{
     ?>
 <img class = "ck" src="../a.png">
 <div class="boxx1">
+    <?php 
+    require_once('../DB/DB.php');
+    $sql = $db -> prepare("SELECT content FROM cookie ORDER BY RAND() LIMIT 1");
+    $sql -> execute();
+    $row = $sql -> fetch();
+    ?>
+    <p class = "cooo"> <?=$row['content']?></p>
 </div>
 
 <rect></rect></body>

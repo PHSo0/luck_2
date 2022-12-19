@@ -73,9 +73,9 @@ $(document).ready(function(){
 		// $("#name") = document.getElementById("name")
 		// $(".name") = document.querySeletor(".name")
 		$("#luck01").text(data.result.day.content[2].desc);
-		// $("#luck02").text(data.result.day.content[4].desc);
-		// $("#luck03").text(data.result.day.content[3].desc);
-		// $("#luck04").text(data.result.day.content[1].desc);
+		$("#luck02").text(data.result.day.content[4].desc);
+		$("#luck03").text(data.result.day.content[3].desc);
+		$("#luck04").text(data.result.day.content[1].desc);
 	}).fail(function(xhr,status,err){
 		console.log('실패');
 	});
