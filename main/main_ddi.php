@@ -49,81 +49,83 @@ section{
     top:145%;
     }
 
-    .ddiimgbox{
-        width:246px;
-        height:249px;
-        position:absolute;
-        left:2%;
-        top:18%;
+    .ddiimgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:50%;
     }
 
-    .wnl{
+    .쥐{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#C8D7FF;
     }
-    .th{
+    .소{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:gray;
     }
-    .ghfkddl{
+    .호랑이{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#FFDCB4;
     }
-    .ehrl{
+    .토끼{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#FFE7F4;
     }
-    .dyd{
+    .용{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:pink;
     }
-    .qoa{
+    .뱀{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:yellow;
     }
-    .akf{
+    .말{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:navy;
     }
-    .did{
+    .양{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#F9FFB7;
     }
-    .dnjstnddl{
+    .원숭이{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#AEA08B;
     }
-    .ekfr{
+    .닭{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:#DAF4D8;
     }
-    .ro{
+    .개{
         width:200px;
         height:200px;
         border-radius:90px;
         background-color:yellowgreen;
     }
-    .ehowl{
+    .돼지{
         width:200px;
         height:200px;
         border-radius:90px;
@@ -131,6 +133,8 @@ section{
     }
 
     .ctitle{
+    position: relative;
+    top:-10px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -143,10 +147,6 @@ section{
     -webkit-text-stroke: 3px #AB6700;
 }
 
-.aniaml{
-    width:100px;
-    height:100px;
-}
 </style>
 </head>
 
@@ -184,26 +184,26 @@ $html = file_get_html('https://search.naver.com/search.naver?where=nexearch&sm=t
 
 <div class="ddibox"><p class="ctitle"><?php echo $type;?></p>
         <div class="ddibigbox">
-            <div class="ddiimgbox">
-            <div class="animal"> <?php echo "<img src='../icon/띠/$type.png'/>"?></div>
+            <div class="<?= $type ?>">  
+                <?php echo "<img src='../icon/띠/$type.png'/>"?>
             </div>
         </div>
     </div> 
 
 <section>
     <div class="mainSlide">
-        <div><a href="main_ddi.php?type=쥐"><img class = "wnl" src="../icon/띠/쥐.png"></a></div>
-        <div><a href="main_ddi.php?type=소"><img class = "th" src="../icon/띠/소.png"></a></div>
-        <div><a href="main_ddi.php?type=호랑이"><img class = "ghfkddl" src="../icon/띠/호랑이.png"></a></div>
-        <div><a href="main_ddi.php?type=토끼"><img class = "ehrl" src="../icon/띠/토끼.png"></a></div>
-        <div><a href="main_ddi.php?type=용"><img class = "dyd" src="../icon/띠/용.png"></a></div>
-        <div><a href="main_ddi.php?type=뱀"><img class = "qoa" src="../icon/띠/뱀.png"></a></div>
-        <div><a href="main_ddi.php?type=말"><img class = "akf" src="../icon/띠/말.png"></a></div>
-        <div><a href="main_ddi.php?type=양"><img class = "did" src="../icon/띠/양.png"></a></div>
-        <div><a href="main_ddi.php?type=원숭이"><img class = "dnjstnddl" src="../icon/띠/원숭이.png"></a></div>
-        <div><a href="main_ddi.php?type=닭"><img class = "ekfr" src="../icon/띠/닭.png"></a></div>
-        <div><a href="main_ddi.php?type=개"><img class = "ro" src="../icon/띠/개.png"></a></div>
-        <div><a href="main_ddi.php?type=돼지"><img class = "ehowl" src="../icon/띠/돼지.png"></a></div>
+        <div><a href="main_ddi.php?type=쥐"><img class = "쥐" src="../icon/띠/쥐.png"></a></div>
+        <div><a href="main_ddi.php?type=소"><img class = "소" src="../icon/띠/소.png"></a></div>
+        <div><a href="main_ddi.php?type=호랑이"><img class = "호랑이" src="../icon/띠/호랑이.png"></a></div>
+        <div><a href="main_ddi.php?type=토끼"><img class = "토끼" src="../icon/띠/토끼.png"></a></div>
+        <div><a href="main_ddi.php?type=용"><img class = "용" src="../icon/띠/용.png"></a></div>
+        <div><a href="main_ddi.php?type=뱀"><img class = "뱀" src="../icon/띠/뱀.png"></a></div>
+        <div><a href="main_ddi.php?type=말"><img class = "말" src="../icon/띠/말.png"></a></div>
+        <div><a href="main_ddi.php?type=양"><img class = "양" src="../icon/띠/양.png"></a></div>
+        <div><a href="main_ddi.php?type=원숭이"><img class = "원숭이" src="../icon/띠/원숭이.png"></a></div>
+        <div><a href="main_ddi.php?type=닭"><img class = "닭" src="../icon/띠/닭.png"></a></div>
+        <div><a href="main_ddi.php?type=개"><img class = "개" src="../icon/띠/개.png"></a></div>
+        <div><a href="main_ddi.php?type=돼지"><img class = "돼지" src="../icon/띠/돼지.png"></a></div>
       </div>  
 </section>    
 </body>
