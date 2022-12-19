@@ -211,7 +211,9 @@ $html = file_get_html('https://search.naver.com/search.naver?where=nexearch&sm=t
             <div class = "dddi">
                 <img src = "../icon/띠/<?=$type?>.png" class="<?= $type ?>" style="object-fit: cover;">
                     <div class="ddiwrite">
-                    <?php echo $html->find('.detail p._cs_fortune_text', 0)->outertext; ?>
+                    <?php
+                    echo $html->find('.detail p._cs_fortune_text', 0)->outertext; 
+                    ?>
                     </div>
             </div>
         </div>

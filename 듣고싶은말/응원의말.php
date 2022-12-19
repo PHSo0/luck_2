@@ -62,7 +62,7 @@
     line-height: 39px;
     text-align : center;
     position : relative;
-    top : 180px;
+    top : 200px;
 }
     </style>
     <body>
@@ -86,6 +86,6 @@
     ?>
     <p class = "coo"> <?=$row['a']?></p>
     </div>
-    <div class="talkbox2"><p class="ch"><b>다른 말도 듣고 싶어요!<b></p></div>
+    <div class="talkbox2" onclick="location.href='../main/main_talk.php'"><p class="ch"><b>다른 말도 듣고 싶어요!<b></p></div>
     </main>
     </body>
