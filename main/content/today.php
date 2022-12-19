@@ -216,7 +216,7 @@
         height:220px;
         position:absolute;
         left:20.5%;
-        top:38%;
+        top:40%;
         background-color:#FFFDF5;
         font-size:1.2em;
         }
@@ -226,7 +226,7 @@
         height:220px;
         position:absolute;
         left:20.5%;
-        top:77.2%;
+        top:82.2%;
         background-color:#FFFDF5;
         font-size:1.2em;
     }
@@ -236,7 +236,7 @@
         height:220px;
         position:absolute;
         left:20.5%;
-        top:116%;
+        top:120%;
         background-color:#FFFDF5;
         font-size:1.2em;
     }
@@ -246,7 +246,7 @@
         height:220px;
         position:absolute;
         left:20.5%;
-        top:155%;
+        top:165%;
         background-color:#FFFDF5;
         font-size:1.2em;
     }
@@ -358,19 +358,19 @@ document.write(date);
     <div class="circle2">
         <img src="pic/학업.png" alt="학업"></div>
             <div class="box2"><p class="ch">학업운</p></div>
-                <div class="textbox2">응라ㅡㅏㅇ</div>
+                <div class="textbox2"></div>
                 <div class="hr2"></div>
 
     <div class="circle3">
         <img src="pic/직업.png" alt="직업"></div>
             <div class="box3"><p class="ch">직업운</p></div>
-                <div class="textbox3">응라ㅡㅏㅇ</div>
+                <div class="textbox3"></div>
                     <div class="hr3"></div>
 
     <div class="circle4">
         <img src="pic/연애.png" alt="연애"></div>
             <div class="box4"><p class="ch">연애운</p></div>
-                <div class="textbox4">응라ㅡㅏㅇ</div>
+                <div class="textbox4"></div>
                     <div class="hr4"></div>
     </main>
     </body>

@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <style>
+<<<<<<< HEAD
 img{
     width : 100px;
     height : 100px;
@@ -24,6 +25,56 @@ section{
 
 
 </head>
+=======
+    body{
+        background-color: #FFFDF5;
+    }
+
+.tiger{
+    width : 100px;
+    height : 100px;
+}
+
+section{
+    width :100%;
+    height: 793px;
+    position : absolute;
+    top : 123px;
+}
+    .ddibox {
+    box-sizing: border-box;
+    position: absolute;
+    width: 324px;
+    height: 72px;
+    left:5%;
+    top:16%;
+    background: #FFF1A5;
+    border: 4px solid #C98724;
+    border-radius: 20px;
+    }
+
+    .ddibigbox{
+    background: #FFFFFF;
+    border: 5px solid #A55E0B;
+    border-radius: 20px;
+    width:1520px;
+    height:400px;
+    position:absolute;
+    left:-2%;
+    top:145%;
+    }
+
+    .ddiimgbox{
+        width:246px;
+        height:249px;
+        position:absolute;
+        left:2%;
+        top:18%;
+    }
+</style>
+</head>
+
+>>>>>>> 3873b920e41dd159830a13815e7b071ae4f07008
 <body>
 <script>
     $(function() {
@@ -46,6 +97,18 @@ section{
     }
     include("../main_nav/ddi.php");
     ?>
+<<<<<<< HEAD
+=======
+
+<div class="ddibox">
+        <div class="ddibigbox">
+            <div class="ddiimgbox">
+                <img src="../호랑이.png" width="250px" height="250px">
+            </div>
+        </div>
+    </div> 
+
+>>>>>>> 3873b920e41dd159830a13815e7b071ae4f07008
 <section>
     <div class="mainSlide">
         <div><img class = "tiger"src="../icon/띠/쥐.png"></div>

@@ -8,7 +8,7 @@
 </head>
 
 <style>
-.it{
+div{
     position : absolute;
     background-color : #FFFDF5;
     width:100%;
@@ -91,7 +91,7 @@
 </style>
 
 <body>
-    <div class="it">
+    <div>
         <p class = "nav_a" onclick="location.href='../main/main_today.php'">오늘의 운세</p>
         <p class = "nav_b" onclick="location.href='../main/main_ddi.php'">띠운세</p>
         <p class = "nav_c" onclick="location.href='../main/main_star.php'">별자리운세</p>
