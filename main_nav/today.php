@@ -94,7 +94,7 @@ div{
 <body>
     <div>
         <p class = "nav_a" onclick="location.href='../main/main_today.php'">오늘의 운세</p>
-        <p class = "nav_b" onclick="location.href='../main/main_ddi.php'">띠운세</p>
+        <p class = "nav_b" onclick="location.href='../main/main_ddi.php?type=쥐띠'">띠운세</p>
         <p class = "nav_c" onclick="location.href='../main/main_star.php?type=게자리'">별자리운세</p>
         <p class = "nav_d" onclick="location.href='../main/main_talk.php'">듣고 싶은 말</p>
         <p class = "nav_e" onclick="location.href='../main/main_cookie.php'">포춘쿠키</p>

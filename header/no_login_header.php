@@ -78,7 +78,7 @@ header{
 <body>
     <!--로그인을 하지 않은 경우의 헤더파일 (백그라운드 색 포함)-->
     <header>
-        <span class = "header_box1" onclick="location.href='../main/main.php'">오늘의 운세</span>
+        <span class = "header_box1" onclick="location.href='../main/main.php'">WoW lucky!</span>
         <span class = "header_box2" onclick = "location.href='../login/login.php'">로그인 </span>
         <span class = "header_box3" onclick = "location.href = '../login/register.php'">회원가입</span>
         <span class = "header_box4" onclick = "location.href = '../Q&A/require.php'">Q&A</span>
