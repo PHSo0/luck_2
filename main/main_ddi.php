@@ -195,52 +195,12 @@ section{
         include("../header/yes_login_header.php");
     }
     include("../main_nav/ddi.php");
+    if(! isset($_SESSION['id'])){
+        include("../no_login/no_login_ddi.php");
+    } else{
+        include("content/ddi.php");
+    }
     ?>
-    <?php 
-/* 스크래핑 모듈*/
-include('simple_html_dom.php');
-//운세 종류
-
-$type=$_GET["type"];
-$html = file_get_html('https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&qvt=0&query='.$type.'%20운세');
-?>
-
-
-<div class="ddibox"><p class="ctitle"><?=$type?></p>
-        <div class="ddibigbox"> 
-            <div class = "dddi">
-                <img src = "../icon/띠/<?=$type?>.png" class="<?= $type ?>" style="object-fit: cover;">
-                    <div class="ddiwrite">
-                    <?php
-                    echo $html->find('.detail p._cs_fortune_text', 0)->outertext; 
-                    ?>
-                    </div>
-            </div>
-        </div>
-    </div> 
-
-<section>
-    <div class="mainSlide">
-        <div><a href="main_ddi.php?type=쥐띠"><img class = "쥐띠" src="../icon/띠/쥐띠.png"></a></div>
-        <div><a href="main_ddi.php?type=소띠"><img class = "소띠" src="../icon/띠/소띠.png"></a></div>
-        <div><a href="main_ddi.php?type=호랑이띠"><img class = "호랑이띠" src="../icon/띠/호랑이띠.png"></a></div>
-        <div><a href="main_ddi.php?type=토끼띠"><img class = "토끼띠" src="../icon/띠/토끼띠.png"></a></div>
-        <div><a href="main_ddi.php?type=용띠"><img class = "용띠" src="../icon/띠/용띠.png"></a></div>
-        <div><a href="main_ddi.php?type=뱀띠"><img class = "뱀띠" src="../icon/띠/뱀띠.png"></a></div>
-        <div><a href="main_ddi.php?type=말띠"><img class = "말띠" src="../icon/띠/말띠.png"></a></div>
-        <div><a href="main_ddi.php?type=양띠"><img class = "양띠" src="../icon/띠/양띠.png"></a></div>
-        <div><a href="main_ddi.php?type=원숭이띠"><img class = "원숭이띠" src="../icon/띠/원숭이띠.png"></a></div>
-        <div><a href="main_ddi.php?type=닭띠"><img class = "닭띠" src="../icon/띠/닭띠.png"></a></div>
-        <div><a href="main_ddi.php?type=개띠"><img class = "개띠" src="../icon/띠/개띠.png"></a></div>
-        <div><a href="main_ddi.php?type=돼지띠"><img class = "돼지띠" src="../icon/띠/돼지띠.png"></a></div>
-      </div>  
-
-    <div class="btn">
-        <div class="prevArrow"><img style="width: 150px; height: 150px;" src="../icon/버튼/왼쪽.png"></div>
-        <div class="nextArrow"><img style="width: 150px; height: 160px;"src="../icon/버튼/오른쪽.png"></div>        
-    </div>   
-
-
-</section>    
+    
 </body>
 </html>
